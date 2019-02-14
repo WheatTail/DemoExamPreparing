@@ -40,6 +40,8 @@
             this.SexSelectComboBox = new System.Windows.Forms.ComboBox();
             this.AgeTextbox = new System.Windows.Forms.TextBox();
             this.RegistrationButton = new System.Windows.Forms.Button();
+            this.CancelButton = new System.Windows.Forms.Button();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // WatermarkLabel
@@ -149,12 +151,34 @@
             this.RegistrationButton.UseVisualStyleBackColor = true;
             this.RegistrationButton.Click += new System.EventHandler(this.RegistrationButton_Click);
             // 
+            // CancelButton
+            // 
+            this.CancelButton.Location = new System.Drawing.Point(12, 251);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(125, 23);
+            this.CancelButton.TabIndex = 12;
+            this.CancelButton.Text = "Отмена";
+            this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // ExitButton
+            // 
+            this.ExitButton.Location = new System.Drawing.Point(12, 280);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(125, 23);
+            this.ExitButton.TabIndex = 13;
+            this.ExitButton.Text = "Выход";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(144, 251);
+            this.ClientSize = new System.Drawing.Size(144, 311);
             this.ControlBox = false;
+            this.Controls.Add(this.ExitButton);
+            this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.RegistrationButton);
             this.Controls.Add(this.AgeTextbox);
             this.Controls.Add(this.SexSelectComboBox);
@@ -190,5 +214,7 @@
         private System.Windows.Forms.ComboBox SexSelectComboBox;
         private System.Windows.Forms.TextBox AgeTextbox;
         private System.Windows.Forms.Button RegistrationButton;
+        private System.Windows.Forms.Button CancelButton;
+        private System.Windows.Forms.Button ExitButton;
     }
 }

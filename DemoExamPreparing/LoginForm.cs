@@ -15,17 +15,6 @@ namespace DemoExamPreparing
     {
         SettingsMangaer settings = new SettingsMangaer();
         
-        public string Server;
-        public string Databse;
-        public string UID;
-        public string Password;      
-
-        private MySqlConnection Con(string Server, string Database, string UID, string Password)
-        {
-            MySqlConnection Con = new MySqlConnection("SERVER=" + Server + "; port=3306; Database=" + Database + "; UID=" + UID + "; PASSWORD=" + Password + "; Persist Security Info=True;");
-            return Con;
-        }
-
         public LoginForm()
         {
             InitializeComponent();
@@ -34,11 +23,14 @@ namespace DemoExamPreparing
         private void LoginForm_Load(object sender, EventArgs e)
         {
             settings.ReadSettingsFromXML();
+            GlobalThingsClass.Server = settings.Fields.Server;
+            GlobalThingsClass.Databse = settings.Fields.Database;
+            GlobalThingsClass.UID = settings.Fields.UID;
+            GlobalThingsClass.Password = settings.Fields.Password;
             this.ServerSettingTextbox.Text = settings.Fields.Server;
             this.DatabaseSettingsTextbox.Text = settings.Fields.Database;
             this.UIDSettingsTextbox.Text = settings.Fields.UID;
             this.PasswordSettingsTextbox.Text = settings.Fields.Password;
-            GlobalThingsClass.Server = settings.Fields.Server;
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -50,22 +42,21 @@ namespace DemoExamPreparing
         {
             if (!SettingsCheckBox.Checked)
             {
-                Server = settings.Fields.Server;
-                Databse = settings.Fields.Database;
-                UID = settings.Fields.UID;
-                Password = settings.Fields.Password;
-
+                GlobalThingsClass.Server = settings.Fields.Server;
+                GlobalThingsClass.Databse = settings.Fields.Database;
+                GlobalThingsClass.UID = settings.Fields.UID;
+                GlobalThingsClass.Password = settings.Fields.Password;
                 try
                 {
                     MySqlConnection connection = new MySqlConnection();
-                    connection = Con(Server, Databse, UID, Password);
+                    connection = GlobalThingsClass.Con(GlobalThingsClass.Server, GlobalThingsClass.Databse, GlobalThingsClass.UID, GlobalThingsClass.Password);
                     connection.Open();
                     MySqlCommand command = new MySqlCommand();
                     command.Connection = connection;
                     command.CommandText = "SELECT COUNT(*) FROM USERS WHERE Login='" + this.LoginTextbox.Text + "' AND Password='" + this.PasswordTextbox.Text + "'";
                     int rows = int.Parse(command.ExecuteScalar().ToString());
                     if (rows > 0){
-                        MessageBox.Show("Вы зашли как " + this.LoginTextbox.Text + " на сервер " + Server, "Авторизация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Вы зашли как " + this.LoginTextbox.Text + " на сервер " + GlobalThingsClass.Server, "Авторизация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Hide();
                         this.Owner.Enabled = true;
                         connection.Close();
@@ -90,15 +81,15 @@ namespace DemoExamPreparing
             }
             else
             {
-                Server = this.ServerSettingTextbox.Text;
-                Databse = this.DatabaseSettingsTextbox.Text;
-                UID = this.UIDSettingsTextbox.Text;
-                Password = this.PasswordSettingsTextbox.Text;
+                GlobalThingsClass.Server = this.ServerSettingTextbox.Text;
+                GlobalThingsClass.Databse = this.DatabaseSettingsTextbox.Text;
+                GlobalThingsClass.UID = this.UIDSettingsTextbox.Text;
+                GlobalThingsClass.Password = this.PasswordSettingsTextbox.Text;
 
                 try
                 {
                     MySqlConnection connection = new MySqlConnection();
-                    connection = Con(Server, Databse, UID, Password);
+                    connection = GlobalThingsClass.Con(GlobalThingsClass.Server, GlobalThingsClass.Databse, GlobalThingsClass.UID, GlobalThingsClass.Password);
                     connection.Open();
                     MySqlCommand command = new MySqlCommand();
                     command.Connection = connection;
@@ -106,7 +97,7 @@ namespace DemoExamPreparing
                     int rows = int.Parse(command.ExecuteScalar().ToString());
                     if (rows > 0)
                     {
-                        MessageBox.Show("Вы зашли как " + this.LoginTextbox.Text + " на сервер " + Server, "Авторизация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Вы зашли как " + this.LoginTextbox.Text + " на сервер " + GlobalThingsClass.Server, "Авторизация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Hide();
                         this.Owner.Enabled = true;
                         connection.Close();
