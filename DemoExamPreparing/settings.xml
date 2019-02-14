@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SettingsFields xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <XMLFile>C:\Users\Amon\source\repos\DemoExamPreparing\DemoExamPreparing\bin\Debug\settings.xml</XMLFile>
+  <Server>192.168.1.3</Server>
+  <Database>maindatabase</Database>
+  <UID>WT</UID>
+  <Password>TestPassword</Password>
+</SettingsFields>

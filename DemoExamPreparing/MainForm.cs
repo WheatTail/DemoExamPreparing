@@ -16,5 +16,13 @@ namespace DemoExamPreparing
         {
             InitializeComponent();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {            
+            LoginForm loginForm = new LoginForm();
+            loginForm.Owner = this;
+            loginForm.Show();
+            this.Enabled = false;
+        }
     }
 }

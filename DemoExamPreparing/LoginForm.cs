@@ -15,10 +15,10 @@ namespace DemoExamPreparing
     {
         SettingsMangaer settings = new SettingsMangaer();
         
-        public static string Server;
-        public static string Databse;
-        public static string UID;
-        public static string Password;      
+        public string Server;
+        public string Databse;
+        public string UID;
+        public string Password;      
 
         private MySqlConnection Con(string Server, string Database, string UID, string Password)
         {
@@ -38,11 +38,12 @@ namespace DemoExamPreparing
             this.DatabaseSettingsTextbox.Text = settings.Fields.Database;
             this.UIDSettingsTextbox.Text = settings.Fields.UID;
             this.PasswordSettingsTextbox.Text = settings.Fields.Password;
+            GlobalThingsClass.Server = settings.Fields.Server;
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void LoginButton_Click(object sender, EventArgs e)
@@ -63,7 +64,10 @@ namespace DemoExamPreparing
                     command.Connection = connection;
                     command.CommandText = "SELECT COUNT(*) FROM USERS WHERE Login='" + this.LoginTextbox.Text + "' AND Password='" + this.PasswordTextbox.Text + "'";
                     int rows = int.Parse(command.ExecuteScalar().ToString());
-                    if (rows > 0){;
+                    if (rows > 0){
+                        MessageBox.Show("Вы зашли как " + this.LoginTextbox.Text + " на сервер " + Server, "Авторизация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
+                        this.Owner.Enabled = true;
                         connection.Close();
                     }
                     else
@@ -77,6 +81,10 @@ namespace DemoExamPreparing
                 {
                     MessageBox.Show(exception.StackTrace);
                 }
+                catch (Exception exception)
+                {
+                    MessageBox.Show(exception.ToString());
+                }
 
 
             }
@@ -87,11 +95,38 @@ namespace DemoExamPreparing
                 UID = this.UIDSettingsTextbox.Text;
                 Password = this.PasswordSettingsTextbox.Text;
 
-
-
+                try
+                {
+                    MySqlConnection connection = new MySqlConnection();
+                    connection = Con(Server, Databse, UID, Password);
+                    connection.Open();
+                    MySqlCommand command = new MySqlCommand();
+                    command.Connection = connection;
+                    command.CommandText = "SELECT COUNT(*) FROM USERS WHERE Login='" + this.LoginTextbox.Text + "' AND Password='" + this.PasswordTextbox.Text + "'";
+                    int rows = int.Parse(command.ExecuteScalar().ToString());
+                    if (rows > 0)
+                    {
+                        MessageBox.Show("Вы зашли как " + this.LoginTextbox.Text + " на сервер " + Server, "Авторизация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
+                        this.Owner.Enabled = true;
+                        connection.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Пользователь не найден или пароль неверен", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        connection.Close();
+                    }
+                    //MessageBox.Show("Connected to " + Server + " successfully");
+                }
+                catch (MySqlException exception)
+                {
+                    MessageBox.Show(exception.StackTrace);
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show(exception.ToString());
+                }
             }
-
-
 
             if (SaveSettingsCheckBox.Checked)
             {
@@ -107,7 +142,7 @@ namespace DemoExamPreparing
         {
             if (SettingsCheckBox.Checked)
             {
-                this.Height = 355;
+                this.Height = 375;
                 this.ServerSettingsLabel.Visible = true;
                 this.ServerSettingTextbox.Visible = true;
                 this.DatabaseSettingsLabel.Visible = true;
@@ -120,7 +155,7 @@ namespace DemoExamPreparing
             }
             else
             {
-                this.Height = 230;
+                this.Height = 250;
                 this.ServerSettingsLabel.Visible = false;
                 this.ServerSettingTextbox.Visible = false;
                 this.DatabaseSettingsLabel.Visible = false;
@@ -132,6 +167,14 @@ namespace DemoExamPreparing
                 this.SaveSettingsCheckBox.Visible = false;
                 this.SaveSettingsCheckBox.Checked = false;
             }
+        }
+
+        private void RegistrationButton_Click(object sender, EventArgs e)
+        {
+            RegistrationForm registrationForm = new RegistrationForm();
+            registrationForm.Owner = this;
+            registrationForm.Show();
+            this.Hide();            
         }
     }
 }

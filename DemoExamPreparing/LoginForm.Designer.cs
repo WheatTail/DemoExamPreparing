@@ -45,12 +45,13 @@
             this.UIDSettingsTextbox = new System.Windows.Forms.TextBox();
             this.PasswordSettingsTextbox = new System.Windows.Forms.TextBox();
             this.SaveSettingsCheckBox = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LoginLabel
             // 
             this.LoginLabel.AutoSize = true;
-            this.LoginLabel.Location = new System.Drawing.Point(72, 5);
+            this.LoginLabel.Location = new System.Drawing.Point(70, 22);
             this.LoginLabel.Name = "LoginLabel";
             this.LoginLabel.Size = new System.Drawing.Size(41, 13);
             this.LoginLabel.TabIndex = 0;
@@ -59,7 +60,7 @@
             // PasswordLabel
             // 
             this.PasswordLabel.AutoSize = true;
-            this.PasswordLabel.Location = new System.Drawing.Point(72, 44);
+            this.PasswordLabel.Location = new System.Drawing.Point(70, 61);
             this.PasswordLabel.Name = "PasswordLabel";
             this.PasswordLabel.Size = new System.Drawing.Size(48, 13);
             this.PasswordLabel.TabIndex = 1;
@@ -67,14 +68,14 @@
             // 
             // LoginTextbox
             // 
-            this.LoginTextbox.Location = new System.Drawing.Point(31, 21);
+            this.LoginTextbox.Location = new System.Drawing.Point(29, 38);
             this.LoginTextbox.Name = "LoginTextbox";
             this.LoginTextbox.Size = new System.Drawing.Size(123, 20);
             this.LoginTextbox.TabIndex = 2;
             // 
             // PasswordTextbox
             // 
-            this.PasswordTextbox.Location = new System.Drawing.Point(31, 60);
+            this.PasswordTextbox.Location = new System.Drawing.Point(29, 77);
             this.PasswordTextbox.Name = "PasswordTextbox";
             this.PasswordTextbox.PasswordChar = '*';
             this.PasswordTextbox.Size = new System.Drawing.Size(123, 20);
@@ -83,7 +84,7 @@
             // SettingsCheckBox
             // 
             this.SettingsCheckBox.AutoSize = true;
-            this.SettingsCheckBox.Location = new System.Drawing.Point(12, 173);
+            this.SettingsCheckBox.Location = new System.Drawing.Point(10, 190);
             this.SettingsCheckBox.Name = "SettingsCheckBox";
             this.SettingsCheckBox.Size = new System.Drawing.Size(170, 17);
             this.SettingsCheckBox.TabIndex = 4;
@@ -94,7 +95,7 @@
             // LoginButton
             // 
             this.LoginButton.AutoSize = true;
-            this.LoginButton.Location = new System.Drawing.Point(31, 86);
+            this.LoginButton.Location = new System.Drawing.Point(29, 103);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(123, 23);
             this.LoginButton.TabIndex = 5;
@@ -105,16 +106,17 @@
             // RegistrationButton
             // 
             this.RegistrationButton.AutoSize = true;
-            this.RegistrationButton.Location = new System.Drawing.Point(31, 115);
+            this.RegistrationButton.Location = new System.Drawing.Point(29, 132);
             this.RegistrationButton.Name = "RegistrationButton";
             this.RegistrationButton.Size = new System.Drawing.Size(123, 23);
             this.RegistrationButton.TabIndex = 6;
             this.RegistrationButton.Text = "Зарегистрироваться";
             this.RegistrationButton.UseVisualStyleBackColor = true;
+            this.RegistrationButton.Click += new System.EventHandler(this.RegistrationButton_Click);
             // 
             // ExitButton
             // 
-            this.ExitButton.Location = new System.Drawing.Point(31, 144);
+            this.ExitButton.Location = new System.Drawing.Point(29, 161);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(123, 23);
             this.ExitButton.TabIndex = 7;
@@ -124,7 +126,7 @@
             // 
             // ServerSettingTextbox
             // 
-            this.ServerSettingTextbox.Location = new System.Drawing.Point(60, 197);
+            this.ServerSettingTextbox.Location = new System.Drawing.Point(58, 214);
             this.ServerSettingTextbox.Name = "ServerSettingTextbox";
             this.ServerSettingTextbox.Size = new System.Drawing.Size(122, 20);
             this.ServerSettingTextbox.TabIndex = 8;
@@ -133,7 +135,7 @@
             // ServerSettingsLabel
             // 
             this.ServerSettingsLabel.AutoSize = true;
-            this.ServerSettingsLabel.Location = new System.Drawing.Point(13, 197);
+            this.ServerSettingsLabel.Location = new System.Drawing.Point(11, 214);
             this.ServerSettingsLabel.Name = "ServerSettingsLabel";
             this.ServerSettingsLabel.Size = new System.Drawing.Size(41, 13);
             this.ServerSettingsLabel.TabIndex = 9;
@@ -143,7 +145,7 @@
             // DatabaseSettingsLabel
             // 
             this.DatabaseSettingsLabel.AutoSize = true;
-            this.DatabaseSettingsLabel.Location = new System.Drawing.Point(13, 223);
+            this.DatabaseSettingsLabel.Location = new System.Drawing.Point(11, 240);
             this.DatabaseSettingsLabel.Name = "DatabaseSettingsLabel";
             this.DatabaseSettingsLabel.Size = new System.Drawing.Size(56, 13);
             this.DatabaseSettingsLabel.TabIndex = 10;
@@ -153,7 +155,7 @@
             // UIDSettingsLabel
             // 
             this.UIDSettingsLabel.AutoSize = true;
-            this.UIDSettingsLabel.Location = new System.Drawing.Point(13, 249);
+            this.UIDSettingsLabel.Location = new System.Drawing.Point(13, 266);
             this.UIDSettingsLabel.Name = "UIDSettingsLabel";
             this.UIDSettingsLabel.Size = new System.Drawing.Size(29, 13);
             this.UIDSettingsLabel.TabIndex = 11;
@@ -163,7 +165,7 @@
             // PasswordSettingsLabel
             // 
             this.PasswordSettingsLabel.AutoSize = true;
-            this.PasswordSettingsLabel.Location = new System.Drawing.Point(13, 275);
+            this.PasswordSettingsLabel.Location = new System.Drawing.Point(11, 292);
             this.PasswordSettingsLabel.Name = "PasswordSettingsLabel";
             this.PasswordSettingsLabel.Size = new System.Drawing.Size(56, 13);
             this.PasswordSettingsLabel.TabIndex = 12;
@@ -172,7 +174,7 @@
             // 
             // DatabaseSettingsTextbox
             // 
-            this.DatabaseSettingsTextbox.Location = new System.Drawing.Point(75, 220);
+            this.DatabaseSettingsTextbox.Location = new System.Drawing.Point(73, 237);
             this.DatabaseSettingsTextbox.Name = "DatabaseSettingsTextbox";
             this.DatabaseSettingsTextbox.Size = new System.Drawing.Size(107, 20);
             this.DatabaseSettingsTextbox.TabIndex = 13;
@@ -180,7 +182,7 @@
             // 
             // UIDSettingsTextbox
             // 
-            this.UIDSettingsTextbox.Location = new System.Drawing.Point(48, 246);
+            this.UIDSettingsTextbox.Location = new System.Drawing.Point(46, 263);
             this.UIDSettingsTextbox.Name = "UIDSettingsTextbox";
             this.UIDSettingsTextbox.Size = new System.Drawing.Size(134, 20);
             this.UIDSettingsTextbox.TabIndex = 14;
@@ -188,7 +190,7 @@
             // 
             // PasswordSettingsTextbox
             // 
-            this.PasswordSettingsTextbox.Location = new System.Drawing.Point(75, 272);
+            this.PasswordSettingsTextbox.Location = new System.Drawing.Point(73, 289);
             this.PasswordSettingsTextbox.Name = "PasswordSettingsTextbox";
             this.PasswordSettingsTextbox.PasswordChar = '*';
             this.PasswordSettingsTextbox.Size = new System.Drawing.Size(107, 20);
@@ -198,7 +200,7 @@
             // SaveSettingsCheckBox
             // 
             this.SaveSettingsCheckBox.AutoSize = true;
-            this.SaveSettingsCheckBox.Location = new System.Drawing.Point(12, 298);
+            this.SaveSettingsCheckBox.Location = new System.Drawing.Point(10, 315);
             this.SaveSettingsCheckBox.Name = "SaveSettingsCheckBox";
             this.SaveSettingsCheckBox.Size = new System.Drawing.Size(155, 17);
             this.SaveSettingsCheckBox.TabIndex = 16;
@@ -206,12 +208,23 @@
             this.SaveSettingsCheckBox.UseVisualStyleBackColor = true;
             this.SaveSettingsCheckBox.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label1.Location = new System.Drawing.Point(45, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 13);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Developed by ωτ";
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(189, 191);
+            this.ClientSize = new System.Drawing.Size(189, 211);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.SaveSettingsCheckBox);
             this.Controls.Add(this.PasswordSettingsTextbox);
             this.Controls.Add(this.UIDSettingsTextbox);
@@ -257,6 +270,7 @@
         private System.Windows.Forms.TextBox UIDSettingsTextbox;
         private System.Windows.Forms.TextBox PasswordSettingsTextbox;
         private System.Windows.Forms.CheckBox SaveSettingsCheckBox;
+        private System.Windows.Forms.Label label1;
     }
 }
 
