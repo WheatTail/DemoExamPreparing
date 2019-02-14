@@ -93,7 +93,11 @@ namespace DemoExamPreparing
                     connection.Open();
                     MySqlCommand command = new MySqlCommand();
                     command.Connection = connection;
-                    command.CommandText = "SELECT COUNT(*) FROM USERS WHERE Login='" + this.LoginTextbox.Text + "' AND Password='" + this.PasswordTextbox.Text + "'";
+                    command.CommandText = "SELECT COUNT(*) FROM USERS WHERE Login=@login AND password=@password";
+                    MySqlParameter loginParameter = new MySqlParameter("@login", this.LoginTextbox.Text);
+                    command.Parameters.Add(loginParameter);
+                    MySqlParameter passwordParameter = new MySqlParameter("@password", this.PasswordTextbox.Text);
+                    command.Parameters.Add(passwordParameter);
                     int rows = int.Parse(command.ExecuteScalar().ToString());
                     if (rows > 0)
                     {

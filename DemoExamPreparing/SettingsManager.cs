@@ -50,7 +50,4 @@ namespace DemoExamPreparing
             }
         }
     }
-
-
-
 }

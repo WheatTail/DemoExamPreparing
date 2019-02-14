@@ -33,14 +33,24 @@ namespace DemoExamPreparing
                 {
                     MySqlConnection connection = new MySqlConnection();
                     connection = GlobalThingsClass.Con(GlobalThingsClass.Server, GlobalThingsClass.Databse, GlobalThingsClass.UID, GlobalThingsClass.Password);
-                    MessageBox.Show(GlobalThingsClass.Server + " " + GlobalThingsClass.Databse + " " + GlobalThingsClass.UID + " " + GlobalThingsClass.Password);
+                    //MessageBox.Show(GlobalThingsClass.Server + " " + GlobalThingsClass.Databse + " " + GlobalThingsClass.UID + " " + GlobalThingsClass.Password);
                     connection.Open();
                     MySqlCommand command = new MySqlCommand();
                     command.Connection = connection;
-                    command.CommandText = "INSERT INTO users(login, password, sex, age) values (\"" + this.LoginTextobx.Text + "\", \"" + this.PasswordTextbox.Text + "\", \"" + this.SexSelectComboBox.Text + "\", " + fake + ")";
+                    command.CommandText = "INSERT INTO users(login, password, sex, age) values (@login, @password, @sex, @age)";
+                    MySqlParameter loginParameter = new MySqlParameter("@login", this.LoginTextobx.Text);
+                    command.Parameters.Add(loginParameter);
+                    MySqlParameter passwordParameter = new MySqlParameter("@password", this.PasswordTextbox.Text);
+                    command.Parameters.Add(passwordParameter);
+                    MySqlParameter sexParameter = new MySqlParameter("@sex", this.SexSelectComboBox.Text);
+                    command.Parameters.Add(sexParameter);
+                    MySqlParameter ageParameter = new MySqlParameter("@age", fake);
+                    command.Parameters.Add(ageParameter);
                     command.ExecuteNonQuery();
                     MessageBox.Show("Новый пользователь добавлен. Логин: " + this.LoginTextobx.Text + ", пол: " + this.SexSelectComboBox.Text + ", возраст: " + fake, "Успешно зарегистрирован", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     connection.Close();
+                    this.Owner.Show();
+                    this.Hide();
                 }
                 catch (MySqlException exception)
                 {
