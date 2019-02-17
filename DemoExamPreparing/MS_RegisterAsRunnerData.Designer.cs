@@ -86,7 +86,7 @@
             this.GrayBackgroundLabel.Dock = System.Windows.Forms.DockStyle.Top;
             this.GrayBackgroundLabel.Location = new System.Drawing.Point(0, 0);
             this.GrayBackgroundLabel.Name = "GrayBackgroundLabel";
-            this.GrayBackgroundLabel.Size = new System.Drawing.Size(484, 48);
+            this.GrayBackgroundLabel.Size = new System.Drawing.Size(500, 48);
             this.GrayBackgroundLabel.TabIndex = 9;
             // 
             // FooterLabel
@@ -96,7 +96,7 @@
             this.FooterLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.FooterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FooterLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.FooterLabel.Location = new System.Drawing.Point(112, 335);
+            this.FooterLabel.Location = new System.Drawing.Point(120, 374);
             this.FooterLabel.Name = "FooterLabel";
             this.FooterLabel.Size = new System.Drawing.Size(249, 17);
             this.FooterLabel.TabIndex = 13;
@@ -106,16 +106,16 @@
             // 
             this.GratBackgroundFooterLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.GratBackgroundFooterLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.GratBackgroundFooterLabel.Location = new System.Drawing.Point(0, 325);
+            this.GratBackgroundFooterLabel.Location = new System.Drawing.Point(0, 364);
             this.GratBackgroundFooterLabel.Name = "GratBackgroundFooterLabel";
-            this.GratBackgroundFooterLabel.Size = new System.Drawing.Size(484, 36);
+            this.GratBackgroundFooterLabel.Size = new System.Drawing.Size(500, 36);
             this.GratBackgroundFooterLabel.TabIndex = 12;
             // 
             // EmailLabel
             // 
             this.EmailLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.EmailLabel.AutoSize = true;
-            this.EmailLabel.Location = new System.Drawing.Point(68, 131);
+            this.EmailLabel.Location = new System.Drawing.Point(68, 151);
             this.EmailLabel.Name = "EmailLabel";
             this.EmailLabel.Size = new System.Drawing.Size(35, 13);
             this.EmailLabel.TabIndex = 14;
@@ -125,7 +125,7 @@
             // 
             this.PasswordLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.PasswordLabel.AutoSize = true;
-            this.PasswordLabel.Location = new System.Drawing.Point(55, 155);
+            this.PasswordLabel.Location = new System.Drawing.Point(55, 175);
             this.PasswordLabel.Name = "PasswordLabel";
             this.PasswordLabel.Size = new System.Drawing.Size(48, 13);
             this.PasswordLabel.TabIndex = 15;
@@ -135,7 +135,7 @@
             // 
             this.PasswordRepeatLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.PasswordRepeatLabel.AutoSize = true;
-            this.PasswordRepeatLabel.Location = new System.Drawing.Point(0, 181);
+            this.PasswordRepeatLabel.Location = new System.Drawing.Point(0, 201);
             this.PasswordRepeatLabel.Name = "PasswordRepeatLabel";
             this.PasswordRepeatLabel.Size = new System.Drawing.Size(103, 13);
             this.PasswordRepeatLabel.TabIndex = 16;
@@ -145,7 +145,7 @@
             // 
             this.NameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.NameLabel.AutoSize = true;
-            this.NameLabel.Location = new System.Drawing.Point(71, 207);
+            this.NameLabel.Location = new System.Drawing.Point(71, 227);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(32, 13);
             this.NameLabel.TabIndex = 17;
@@ -155,7 +155,7 @@
             // 
             this.SurnameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.SurnameLabel.AutoSize = true;
-            this.SurnameLabel.Location = new System.Drawing.Point(44, 233);
+            this.SurnameLabel.Location = new System.Drawing.Point(44, 253);
             this.SurnameLabel.Name = "SurnameLabel";
             this.SurnameLabel.Size = new System.Drawing.Size(59, 13);
             this.SurnameLabel.TabIndex = 18;
@@ -165,7 +165,7 @@
             // 
             this.SexLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.SexLabel.AutoSize = true;
-            this.SexLabel.Location = new System.Drawing.Point(73, 259);
+            this.SexLabel.Location = new System.Drawing.Point(73, 279);
             this.SexLabel.Name = "SexLabel";
             this.SexLabel.Size = new System.Drawing.Size(30, 13);
             this.SexLabel.TabIndex = 19;
@@ -184,7 +184,7 @@
             // 
             this.BirthDateLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BirthDateLabel.AutoSize = true;
-            this.BirthDateLabel.Location = new System.Drawing.Point(249, 233);
+            this.BirthDateLabel.Location = new System.Drawing.Point(265, 253);
             this.BirthDateLabel.Name = "BirthDateLabel";
             this.BirthDateLabel.Size = new System.Drawing.Size(83, 13);
             this.BirthDateLabel.TabIndex = 21;
@@ -194,7 +194,7 @@
             // 
             this.CountryLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.CountryLabel.AutoSize = true;
-            this.CountryLabel.Location = new System.Drawing.Point(286, 259);
+            this.CountryLabel.Location = new System.Drawing.Point(302, 279);
             this.CountryLabel.Name = "CountryLabel";
             this.CountryLabel.Size = new System.Drawing.Size(46, 13);
             this.CountryLabel.TabIndex = 22;
@@ -206,7 +206,7 @@
             this.RegistrationHeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RegistrationHeaderLabel.Location = new System.Drawing.Point(0, 48);
             this.RegistrationHeaderLabel.Name = "RegistrationHeaderLabel";
-            this.RegistrationHeaderLabel.Size = new System.Drawing.Size(484, 60);
+            this.RegistrationHeaderLabel.Size = new System.Drawing.Size(500, 60);
             this.RegistrationHeaderLabel.TabIndex = 23;
             this.RegistrationHeaderLabel.Text = "Регистрация бегуна\r\n\r\nПожалуйста заполните всю информацию, чтобы зарегистрировать" +
     "ся в качестве бегуна\r\n";
@@ -215,7 +215,7 @@
             // BirthDate
             // 
             this.BirthDate.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.BirthDate.Location = new System.Drawing.Point(338, 230);
+            this.BirthDate.Location = new System.Drawing.Point(354, 250);
             this.BirthDate.Name = "BirthDate";
             this.BirthDate.Size = new System.Drawing.Size(137, 20);
             this.BirthDate.TabIndex = 24;
@@ -225,7 +225,7 @@
             this.EmailTextbox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.EmailTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EmailTextbox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.EmailTextbox.Location = new System.Drawing.Point(109, 128);
+            this.EmailTextbox.Location = new System.Drawing.Point(109, 148);
             this.EmailTextbox.Name = "EmailTextbox";
             this.EmailTextbox.Size = new System.Drawing.Size(154, 20);
             this.EmailTextbox.TabIndex = 25;
@@ -236,7 +236,7 @@
             this.PasswordTextbox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.PasswordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PasswordTextbox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.PasswordTextbox.Location = new System.Drawing.Point(109, 152);
+            this.PasswordTextbox.Location = new System.Drawing.Point(109, 172);
             this.PasswordTextbox.Name = "PasswordTextbox";
             this.PasswordTextbox.Size = new System.Drawing.Size(100, 20);
             this.PasswordTextbox.TabIndex = 26;
@@ -247,7 +247,7 @@
             this.PasswordRepeatTextbox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.PasswordRepeatTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PasswordRepeatTextbox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.PasswordRepeatTextbox.Location = new System.Drawing.Point(109, 178);
+            this.PasswordRepeatTextbox.Location = new System.Drawing.Point(109, 198);
             this.PasswordRepeatTextbox.Name = "PasswordRepeatTextbox";
             this.PasswordRepeatTextbox.Size = new System.Drawing.Size(100, 20);
             this.PasswordRepeatTextbox.TabIndex = 27;
@@ -258,7 +258,7 @@
             this.NameTextbox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.NameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NameTextbox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.NameTextbox.Location = new System.Drawing.Point(109, 204);
+            this.NameTextbox.Location = new System.Drawing.Point(109, 224);
             this.NameTextbox.Name = "NameTextbox";
             this.NameTextbox.Size = new System.Drawing.Size(100, 20);
             this.NameTextbox.TabIndex = 28;
@@ -269,7 +269,7 @@
             this.SurnameTextbox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.SurnameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SurnameTextbox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.SurnameTextbox.Location = new System.Drawing.Point(109, 230);
+            this.SurnameTextbox.Location = new System.Drawing.Point(109, 250);
             this.SurnameTextbox.Name = "SurnameTextbox";
             this.SurnameTextbox.Size = new System.Drawing.Size(100, 20);
             this.SurnameTextbox.TabIndex = 29;
@@ -279,7 +279,7 @@
             // 
             this.SexComboBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.SexComboBox.FormattingEnabled = true;
-            this.SexComboBox.Location = new System.Drawing.Point(109, 256);
+            this.SexComboBox.Location = new System.Drawing.Point(109, 276);
             this.SexComboBox.Name = "SexComboBox";
             this.SexComboBox.Size = new System.Drawing.Size(100, 21);
             this.SexComboBox.TabIndex = 30;
@@ -288,7 +288,7 @@
             // 
             this.CountryComboBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.CountryComboBox.FormattingEnabled = true;
-            this.CountryComboBox.Location = new System.Drawing.Point(338, 256);
+            this.CountryComboBox.Location = new System.Drawing.Point(354, 276);
             this.CountryComboBox.Name = "CountryComboBox";
             this.CountryComboBox.Size = new System.Drawing.Size(137, 21);
             this.CountryComboBox.TabIndex = 31;
@@ -296,7 +296,7 @@
             // PhotoPictureBox
             // 
             this.PhotoPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PhotoPictureBox.Location = new System.Drawing.Point(375, 98);
+            this.PhotoPictureBox.Location = new System.Drawing.Point(391, 98);
             this.PhotoPictureBox.Name = "PhotoPictureBox";
             this.PhotoPictureBox.Size = new System.Drawing.Size(100, 100);
             this.PhotoPictureBox.TabIndex = 32;
@@ -305,7 +305,7 @@
             // PhotoFindButton
             // 
             this.PhotoFindButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.PhotoFindButton.Location = new System.Drawing.Point(397, 204);
+            this.PhotoFindButton.Location = new System.Drawing.Point(413, 224);
             this.PhotoFindButton.Name = "PhotoFindButton";
             this.PhotoFindButton.Size = new System.Drawing.Size(75, 23);
             this.PhotoFindButton.TabIndex = 33;
@@ -315,7 +315,7 @@
             // RegisterButton
             // 
             this.RegisterButton.AutoSize = true;
-            this.RegisterButton.Location = new System.Drawing.Point(169, 299);
+            this.RegisterButton.Location = new System.Drawing.Point(169, 338);
             this.RegisterButton.Name = "RegisterButton";
             this.RegisterButton.Size = new System.Drawing.Size(82, 23);
             this.RegisterButton.TabIndex = 34;
@@ -324,7 +324,7 @@
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(257, 299);
+            this.CancelButton.Location = new System.Drawing.Point(257, 338);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(75, 23);
             this.CancelButton.TabIndex = 35;
@@ -336,7 +336,7 @@
             this.PhotoPathTextbox.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.PhotoPathTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PhotoPathTextbox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.PhotoPathTextbox.Location = new System.Drawing.Point(252, 206);
+            this.PhotoPathTextbox.Location = new System.Drawing.Point(268, 226);
             this.PhotoPathTextbox.Name = "PhotoPathTextbox";
             this.PhotoPathTextbox.Size = new System.Drawing.Size(139, 20);
             this.PhotoPathTextbox.TabIndex = 36;
@@ -346,7 +346,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 361);
+            this.ClientSize = new System.Drawing.Size(500, 400);
             this.Controls.Add(this.PhotoPathTextbox);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.RegisterButton);

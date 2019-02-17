@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CharityInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharityInfo.Designer.cs">
+      <DependentUpon>CharityInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="GlobalThingsClass.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -93,6 +99,30 @@
     <Compile Include="MS_RegisterAsRunnerData.Designer.cs">
       <DependentUpon>MS_RegisterAsRunnerData.cs</DependentUpon>
     </Compile>
+    <Compile Include="MS_RegisterForAnEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_RegisterForAnEvent.Designer.cs">
+      <DependentUpon>MS_RegisterForAnEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_RegistrationConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_RegistrationConfirmation.Designer.cs">
+      <DependentUpon>MS_RegistrationConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_SponsorConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_SponsorConfirmation.Designer.cs">
+      <DependentUpon>MS_SponsorConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_SupportARuuner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_SupportARuuner.Designer.cs">
+      <DependentUpon>MS_SupportARuuner.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistrationForm.cs">
@@ -102,6 +132,9 @@
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SettingsManager.cs" />
+    <EmbeddedResource Include="CharityInfo.resx">
+      <DependentUpon>CharityInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +155,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MS_RegisterAsRunnerData.resx">
       <DependentUpon>MS_RegisterAsRunnerData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_RegisterForAnEvent.resx">
+      <DependentUpon>MS_RegisterForAnEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_RegistrationConfirmation.resx">
+      <DependentUpon>MS_RegistrationConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_SponsorConfirmation.resx">
+      <DependentUpon>MS_SponsorConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_SupportARuuner.resx">
+      <DependentUpon>MS_SupportARuuner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
