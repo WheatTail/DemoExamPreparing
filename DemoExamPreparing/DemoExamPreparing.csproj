@@ -50,11 +50,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CharityInfo.cs">
+    <Compile Include="MS_CharityInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CharityInfo.Designer.cs">
-      <DependentUpon>CharityInfo.cs</DependentUpon>
+    <Compile Include="MS_CharityInfo.Designer.cs">
+      <DependentUpon>MS_CharityInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalThingsClass.cs" />
     <Compile Include="LoginForm.cs">
@@ -69,11 +69,17 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MarathonSkills.cs">
+    <Compile Include="MS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MarathonSkills.Designer.cs">
-      <DependentUpon>MarathonSkills.cs</DependentUpon>
+    <Compile Include="MS.Designer.cs">
+      <DependentUpon>MS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Contacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_Contacts.Designer.cs">
+      <DependentUpon>MS_Contacts.cs</DependentUpon>
     </Compile>
     <Compile Include="MS_Login.cs">
       <SubType>Form</SubType>
@@ -86,6 +92,18 @@
     </Compile>
     <Compile Include="MS_LoginRole.Designer.cs">
       <DependentUpon>MS_LoginRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_MarathonInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_MarathonInfo.Designer.cs">
+      <DependentUpon>MS_MarathonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_MoreInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_MoreInfo.Designer.cs">
+      <DependentUpon>MS_MoreInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="MS_RegisterAsRunner.cs">
       <SubType>Form</SubType>
@@ -111,6 +129,12 @@
     <Compile Include="MS_RegistrationConfirmation.Designer.cs">
       <DependentUpon>MS_RegistrationConfirmation.cs</DependentUpon>
     </Compile>
+    <Compile Include="MS_RunnerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_RunnerMenu.Designer.cs">
+      <DependentUpon>MS_RunnerMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="MS_SponsorConfirmation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,8 +156,8 @@
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SettingsManager.cs" />
-    <EmbeddedResource Include="CharityInfo.resx">
-      <DependentUpon>CharityInfo.cs</DependentUpon>
+    <EmbeddedResource Include="MS_CharityInfo.resx">
+      <DependentUpon>MS_CharityInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -141,14 +165,23 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MarathonSkills.resx">
-      <DependentUpon>MarathonSkills.cs</DependentUpon>
+    <EmbeddedResource Include="MS.resx">
+      <DependentUpon>MS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_Contacts.resx">
+      <DependentUpon>MS_Contacts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MS_Login.resx">
       <DependentUpon>MS_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MS_LoginRole.resx">
       <DependentUpon>MS_LoginRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_MarathonInfo.resx">
+      <DependentUpon>MS_MarathonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_MoreInfo.resx">
+      <DependentUpon>MS_MoreInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MS_RegisterAsRunner.resx">
       <DependentUpon>MS_RegisterAsRunner.cs</DependentUpon>
@@ -161,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MS_RegistrationConfirmation.resx">
       <DependentUpon>MS_RegistrationConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_RunnerMenu.resx">
+      <DependentUpon>MS_RunnerMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MS_SponsorConfirmation.resx">
       <DependentUpon>MS_SponsorConfirmation.cs</DependentUpon>

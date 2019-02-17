@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DemoExamPreparing
 {
-    public partial class MarathonSkills : Form
+    public partial class MS : Form
     {
-        public MarathonSkills()
+        public MS()
         {
             InitializeComponent();
         }

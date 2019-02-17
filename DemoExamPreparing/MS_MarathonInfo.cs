@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DemoExamPreparing
 {
-    public partial class CharityInfo : Form
+    public partial class MS_MarathonInfo : Form
     {
-        public CharityInfo()
+        public MS_MarathonInfo()
         {
             InitializeComponent();
         }

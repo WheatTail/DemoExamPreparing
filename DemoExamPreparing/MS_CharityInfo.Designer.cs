@@ -1,6 +1,6 @@
 ﻿namespace DemoExamPreparing
 {
-    partial class CharityInfo
+    partial class MS_CharityInfo
     {
         /// <summary>
         /// Required designer variable.
@@ -30,8 +30,9 @@
         {
             this.SponsorNameLabel = new System.Windows.Forms.Label();
             this.SponsorDesctiption = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.CharityLogoPictureBox = new System.Windows.Forms.PictureBox();
+            this.CancelButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.CharityLogoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // SponsorNameLabel
@@ -55,28 +56,41 @@
             this.SponsorDesctiption.TabIndex = 2;
             this.SponsorDesctiption.Text = "Описание спонсора";
             // 
-            // pictureBox1
+            // CharityLogoPictureBox
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.Location = new System.Drawing.Point(171, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.CharityLogoPictureBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.CharityLogoPictureBox.Location = new System.Drawing.Point(171, 29);
+            this.CharityLogoPictureBox.Name = "CharityLogoPictureBox";
+            this.CharityLogoPictureBox.Size = new System.Drawing.Size(100, 100);
+            this.CharityLogoPictureBox.TabIndex = 3;
+            this.CharityLogoPictureBox.TabStop = false;
             // 
-            // CharityInfo
+            // CancelButton
+            // 
+            this.CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CancelButton.AutoSize = true;
+            this.CancelButton.ForeColor = System.Drawing.Color.DarkRed;
+            this.CancelButton.Location = new System.Drawing.Point(448, 12);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(24, 23);
+            this.CancelButton.TabIndex = 4;
+            this.CancelButton.Text = "X";
+            this.CancelButton.UseVisualStyleBackColor = true;
+            // 
+            // MS_CharityInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 361);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.CancelButton);
+            this.Controls.Add(this.CharityLogoPictureBox);
             this.Controls.Add(this.SponsorDesctiption);
             this.Controls.Add(this.SponsorNameLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "CharityInfo";
+            this.Name = "MS_CharityInfo";
             this.Text = "CharityInfo";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CharityLogoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,6 +100,7 @@
 
         private System.Windows.Forms.Label SponsorNameLabel;
         private System.Windows.Forms.Label SponsorDesctiption;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox CharityLogoPictureBox;
+        private System.Windows.Forms.Button CancelButton;
     }
 }

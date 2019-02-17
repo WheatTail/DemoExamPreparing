@@ -1,6 +1,6 @@
 ﻿namespace DemoExamPreparing
 {
-    partial class MarathonSkills
+    partial class MS
     {
         /// <summary>
         /// Required designer variable.
