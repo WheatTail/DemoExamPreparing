@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MS_CharitiesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_CharitiesList.Designer.cs">
+      <DependentUpon>MS_CharitiesList.cs</DependentUpon>
+    </Compile>
     <Compile Include="MS_CharityInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,12 @@
     </Compile>
     <Compile Include="MS_Contacts.Designer.cs">
       <DependentUpon>MS_Contacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_InteractiveMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_InteractiveMap.Designer.cs">
+      <DependentUpon>MS_InteractiveMap.cs</DependentUpon>
     </Compile>
     <Compile Include="MS_Login.cs">
       <SubType>Form</SubType>
@@ -156,6 +168,9 @@
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SettingsManager.cs" />
+    <EmbeddedResource Include="MS_CharitiesList.resx">
+      <DependentUpon>MS_CharitiesList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MS_CharityInfo.resx">
       <DependentUpon>MS_CharityInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MS_Contacts.resx">
       <DependentUpon>MS_Contacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_InteractiveMap.resx">
+      <DependentUpon>MS_InteractiveMap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MS_Login.resx">
       <DependentUpon>MS_Login.cs</DependentUpon>
@@ -230,6 +248,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="marathon-skills-2016-marathon-map.jpg" />
     <Content Include="settings.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
