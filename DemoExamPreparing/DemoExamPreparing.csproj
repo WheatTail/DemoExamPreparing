@@ -39,6 +39,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MS_AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_AdminMenu.Designer.cs">
+      <DependentUpon>MS_AdminMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="MS_CharitiesList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +94,24 @@
     <Compile Include="MS_Contacts.Designer.cs">
       <DependentUpon>MS_Contacts.cs</DependentUpon>
     </Compile>
+    <Compile Include="MS_CoordinatorMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_CoordinatorMenu.Designer.cs">
+      <DependentUpon>MS_CoordinatorMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_EditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_EditProfile.Designer.cs">
+      <DependentUpon>MS_EditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_HowLongIsMarathon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_HowLongIsMarathon.Designer.cs">
+      <DependentUpon>MS_HowLongIsMarathon.cs</DependentUpon>
+    </Compile>
     <Compile Include="MS_InteractiveMap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +141,18 @@
     </Compile>
     <Compile Include="MS_MoreInfo.Designer.cs">
       <DependentUpon>MS_MoreInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_MyResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_MyResults.Designer.cs">
+      <DependentUpon>MS_MyResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_PreviousResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_PreviousResult.Designer.cs">
+      <DependentUpon>MS_PreviousResult.cs</DependentUpon>
     </Compile>
     <Compile Include="MS_RegisterAsRunner.cs">
       <SubType>Form</SubType>
@@ -159,6 +196,12 @@
     <Compile Include="MS_SupportARuuner.Designer.cs">
       <DependentUpon>MS_SupportARuuner.cs</DependentUpon>
     </Compile>
+    <Compile Include="MS_MySponsors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_MySponsors.Designer.cs">
+      <DependentUpon>MS_MySponsors.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistrationForm.cs">
@@ -168,6 +211,9 @@
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SettingsManager.cs" />
+    <EmbeddedResource Include="MS_AdminMenu.resx">
+      <DependentUpon>MS_AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MS_CharitiesList.resx">
       <DependentUpon>MS_CharitiesList.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +232,15 @@
     <EmbeddedResource Include="MS_Contacts.resx">
       <DependentUpon>MS_Contacts.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MS_CoordinatorMenu.resx">
+      <DependentUpon>MS_CoordinatorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_EditProfile.resx">
+      <DependentUpon>MS_EditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_HowLongIsMarathon.resx">
+      <DependentUpon>MS_HowLongIsMarathon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MS_InteractiveMap.resx">
       <DependentUpon>MS_InteractiveMap.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +255,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MS_MoreInfo.resx">
       <DependentUpon>MS_MoreInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_MyResults.resx">
+      <DependentUpon>MS_MyResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_PreviousResult.resx">
+      <DependentUpon>MS_PreviousResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MS_RegisterAsRunner.resx">
       <DependentUpon>MS_RegisterAsRunner.cs</DependentUpon>
@@ -221,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MS_SupportARuuner.resx">
       <DependentUpon>MS_SupportARuuner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_MySponsors.resx">
+      <DependentUpon>MS_MySponsors.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

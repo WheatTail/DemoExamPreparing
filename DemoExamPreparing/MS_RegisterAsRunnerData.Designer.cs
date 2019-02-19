@@ -39,11 +39,11 @@
             this.NameLabel = new System.Windows.Forms.Label();
             this.SurnameLabel = new System.Windows.Forms.Label();
             this.SexLabel = new System.Windows.Forms.Label();
-            this.Photolabel = new System.Windows.Forms.Label();
+            this.PhotoLabel = new System.Windows.Forms.Label();
             this.BirthDateLabel = new System.Windows.Forms.Label();
             this.CountryLabel = new System.Windows.Forms.Label();
             this.RegistrationHeaderLabel = new System.Windows.Forms.Label();
-            this.BirthDate = new System.Windows.Forms.DateTimePicker();
+            this.BirthDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.EmailTextbox = new System.Windows.Forms.TextBox();
             this.PasswordTextbox = new System.Windows.Forms.TextBox();
             this.PasswordRepeatTextbox = new System.Windows.Forms.TextBox();
@@ -171,14 +171,14 @@
             this.SexLabel.TabIndex = 19;
             this.SexLabel.Text = "Пол:";
             // 
-            // Photolabel
+            // PhotoLabel
             // 
-            this.Photolabel.AutoSize = true;
-            this.Photolabel.Location = new System.Drawing.Point(302, 185);
-            this.Photolabel.Name = "Photolabel";
-            this.Photolabel.Size = new System.Drawing.Size(67, 13);
-            this.Photolabel.TabIndex = 20;
-            this.Photolabel.Text = "Фото файл:";
+            this.PhotoLabel.AutoSize = true;
+            this.PhotoLabel.Location = new System.Drawing.Point(302, 185);
+            this.PhotoLabel.Name = "PhotoLabel";
+            this.PhotoLabel.Size = new System.Drawing.Size(67, 13);
+            this.PhotoLabel.TabIndex = 20;
+            this.PhotoLabel.Text = "Фото файл:";
             // 
             // BirthDateLabel
             // 
@@ -212,13 +212,13 @@
     "ся в качестве бегуна\r\n";
             this.RegistrationHeaderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // BirthDate
+            // BirthDateDateTimePicker
             // 
-            this.BirthDate.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.BirthDate.Location = new System.Drawing.Point(354, 250);
-            this.BirthDate.Name = "BirthDate";
-            this.BirthDate.Size = new System.Drawing.Size(137, 20);
-            this.BirthDate.TabIndex = 24;
+            this.BirthDateDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BirthDateDateTimePicker.Location = new System.Drawing.Point(354, 250);
+            this.BirthDateDateTimePicker.Name = "BirthDateDateTimePicker";
+            this.BirthDateDateTimePicker.Size = new System.Drawing.Size(137, 20);
+            this.BirthDateDateTimePicker.TabIndex = 24;
             // 
             // EmailTextbox
             // 
@@ -359,11 +359,11 @@
             this.Controls.Add(this.PasswordRepeatTextbox);
             this.Controls.Add(this.PasswordTextbox);
             this.Controls.Add(this.EmailTextbox);
-            this.Controls.Add(this.BirthDate);
+            this.Controls.Add(this.BirthDateDateTimePicker);
             this.Controls.Add(this.RegistrationHeaderLabel);
             this.Controls.Add(this.CountryLabel);
             this.Controls.Add(this.BirthDateLabel);
-            this.Controls.Add(this.Photolabel);
+            this.Controls.Add(this.PhotoLabel);
             this.Controls.Add(this.SexLabel);
             this.Controls.Add(this.SurnameLabel);
             this.Controls.Add(this.NameLabel);
@@ -397,11 +397,11 @@
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Label SurnameLabel;
         private System.Windows.Forms.Label SexLabel;
-        private System.Windows.Forms.Label Photolabel;
+        private System.Windows.Forms.Label PhotoLabel;
         private System.Windows.Forms.Label BirthDateLabel;
         private System.Windows.Forms.Label CountryLabel;
         private System.Windows.Forms.Label RegistrationHeaderLabel;
-        private System.Windows.Forms.DateTimePicker BirthDate;
+        private System.Windows.Forms.DateTimePicker BirthDateDateTimePicker;
         private System.Windows.Forms.TextBox EmailTextbox;
         private System.Windows.Forms.TextBox PasswordTextbox;
         private System.Windows.Forms.TextBox PasswordRepeatTextbox;

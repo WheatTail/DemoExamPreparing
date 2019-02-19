@@ -104,6 +104,8 @@
             // 
             // CharityListTableLayoutPanel
             // 
+            this.CharityListTableLayoutPanel.AutoScroll = true;
+            this.CharityListTableLayoutPanel.AutoSize = true;
             this.CharityListTableLayoutPanel.ColumnCount = 2;
             this.CharityListTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.CharityListTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
