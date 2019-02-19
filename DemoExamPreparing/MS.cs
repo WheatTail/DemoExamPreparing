@@ -19,12 +19,12 @@ namespace DemoExamPreparing
 
         private void IWannaKnowledge_Click(object sender, EventArgs e)
         {
-
+            GlobalThingsClass.GoFurther(new MS_MoreInfo(), this);
         }
 
         private void IWannaBeARunnerSponsor_Click(object sender, EventArgs e)
         {
-
+            GlobalThingsClass.GoFurther(new MS_SupportARuuner(), this);
         }
 
         private void MarathonSkills_Load(object sender, EventArgs e)
@@ -34,7 +34,13 @@ namespace DemoExamPreparing
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
+            GlobalThingsClass.GoFurther(new MS_Login(), this);
+            //GlobalThingsClass.GoFurther(new MS_AdminMenu(), this);
+        }
 
+        private void IWannaBeARunnerButton_Click(object sender, EventArgs e)
+        {
+            GlobalThingsClass.GoFurther(new MS_RegisterAsRunner(), this);
         }
     }
 }

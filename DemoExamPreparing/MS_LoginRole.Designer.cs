@@ -40,12 +40,13 @@
             this.CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CancelButton.AutoSize = true;
             this.CancelButton.ForeColor = System.Drawing.Color.DarkRed;
-            this.CancelButton.Location = new System.Drawing.Point(298, 12);
+            this.CancelButton.Location = new System.Drawing.Point(414, 12);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(24, 23);
             this.CancelButton.TabIndex = 0;
             this.CancelButton.Text = "X";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // AskTextLabel
             // 
@@ -65,6 +66,7 @@
             this.RunnerLoginButton.TabIndex = 2;
             this.RunnerLoginButton.Text = "Бегун";
             this.RunnerLoginButton.UseVisualStyleBackColor = true;
+            this.RunnerLoginButton.Click += new System.EventHandler(this.RunnerLoginButton_Click);
             // 
             // ManagerLoginButton
             // 
@@ -76,6 +78,7 @@
             this.ManagerLoginButton.TabIndex = 3;
             this.ManagerLoginButton.Text = "Координатор";
             this.ManagerLoginButton.UseVisualStyleBackColor = true;
+            this.ManagerLoginButton.Click += new System.EventHandler(this.ManagerLoginButton_Click);
             // 
             // AdminLoginButton
             // 
@@ -87,6 +90,7 @@
             this.AdminLoginButton.TabIndex = 4;
             this.AdminLoginButton.Text = "Администратор";
             this.AdminLoginButton.UseVisualStyleBackColor = true;
+            this.AdminLoginButton.Click += new System.EventHandler(this.AdminLoginButton_Click);
             // 
             // MS_LoginRole
             // 

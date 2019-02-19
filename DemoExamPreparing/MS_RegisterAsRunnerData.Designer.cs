@@ -79,6 +79,7 @@
             this.GoBackButton.TabIndex = 10;
             this.GoBackButton.Text = "Назад";
             this.GoBackButton.UseVisualStyleBackColor = true;
+            this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
             // 
             // GrayBackgroundLabel
             // 
@@ -330,6 +331,7 @@
             this.CancelButton.TabIndex = 35;
             this.CancelButton.Text = "Отмена";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // PhotoPathTextbox
             // 

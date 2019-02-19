@@ -76,6 +76,7 @@
             this.GoBackButton.TabIndex = 13;
             this.GoBackButton.Text = "Назад";
             this.GoBackButton.UseVisualStyleBackColor = true;
+            this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
             // 
             // GrayBackgroundLabel
             // 
@@ -297,6 +298,7 @@
             this.CancelButton.TabIndex = 35;
             this.CancelButton.Text = "Отмена";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // CharityDestinationComboBox
             // 
@@ -316,6 +318,7 @@
             this.LogoutButton.TabIndex = 37;
             this.LogoutButton.Text = "Logout";
             this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // CharityInfoLabelButton
             // 

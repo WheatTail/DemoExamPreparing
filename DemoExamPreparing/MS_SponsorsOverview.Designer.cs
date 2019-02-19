@@ -56,6 +56,7 @@
             this.FooterLabel.Size = new System.Drawing.Size(249, 17);
             this.FooterLabel.TabIndex = 76;
             this.FooterLabel.Text = "Сколько-то дней до чего-то там";
+            this.FooterLabel.Click += new System.EventHandler(this.FooterLabel_Click);
             // 
             // GratBackgroundFooterLabel
             // 
@@ -65,6 +66,7 @@
             this.GratBackgroundFooterLabel.Name = "GratBackgroundFooterLabel";
             this.GratBackgroundFooterLabel.Size = new System.Drawing.Size(484, 36);
             this.GratBackgroundFooterLabel.TabIndex = 75;
+            this.GratBackgroundFooterLabel.Click += new System.EventHandler(this.GratBackgroundFooterLabel_Click);
             // 
             // LogoutButton
             // 
@@ -75,6 +77,7 @@
             this.LogoutButton.TabIndex = 74;
             this.LogoutButton.Text = "Logout";
             this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // HeaderLabel
             // 
@@ -87,6 +90,7 @@
             this.HeaderLabel.Size = new System.Drawing.Size(170, 15);
             this.HeaderLabel.TabIndex = 73;
             this.HeaderLabel.Text = "MARATHON SKILLS 2019";
+            this.HeaderLabel.Click += new System.EventHandler(this.HeaderLabel_Click);
             // 
             // GoBackButton
             // 
@@ -96,6 +100,7 @@
             this.GoBackButton.TabIndex = 72;
             this.GoBackButton.Text = "Назад";
             this.GoBackButton.UseVisualStyleBackColor = true;
+            this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
             // 
             // GrayBackgroundLabel
             // 
@@ -105,6 +110,7 @@
             this.GrayBackgroundLabel.Name = "GrayBackgroundLabel";
             this.GrayBackgroundLabel.Size = new System.Drawing.Size(484, 48);
             this.GrayBackgroundLabel.TabIndex = 71;
+            this.GrayBackgroundLabel.Click += new System.EventHandler(this.GrayBackgroundLabel_Click);
             // 
             // SponsorsOverviewHeaderLabel
             // 

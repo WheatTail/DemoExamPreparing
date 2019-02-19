@@ -75,6 +75,7 @@
             this.LogoutButton.TabIndex = 86;
             this.LogoutButton.Text = "Logout";
             this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // HeaderLabel
             // 
@@ -96,6 +97,7 @@
             this.GoBackButton.TabIndex = 84;
             this.GoBackButton.Text = "Назад";
             this.GoBackButton.UseVisualStyleBackColor = true;
+            this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
             // 
             // GrayBackgroundLabel
             // 
@@ -172,6 +174,7 @@
             this.CancelButton.TabIndex = 95;
             this.CancelButton.Text = "Отмена";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // CSVFindButton
             // 

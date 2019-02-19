@@ -16,5 +16,27 @@ namespace DemoExamPreparing
         {
             InitializeComponent();
         }
+
+        private void GoBackButton_Click(object sender, EventArgs e)
+        {
+            GlobalThingsClass.GoBack(this);
+        }
+
+        private void LogoutButton_Click(object sender, EventArgs e)
+        {
+            GlobalThingsClass.LogOut(this);
+        }
+
+        private void InventoryReportButton_Click(object sender, EventArgs e)
+        {
+            MS_Report _Report = new MS_Report();
+            _Report.Owner = this;
+            _Report.Show();
+        }
+
+        private void InventoryIncomingButton_Click(object sender, EventArgs e)
+        {
+            GlobalThingsClass.GoFurther(new MS_InventoryIncoming(), this);
+        }
     }
 }

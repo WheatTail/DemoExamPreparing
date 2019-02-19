@@ -76,6 +76,7 @@
             this.CancelButton.TabIndex = 4;
             this.CancelButton.Text = "X";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // MS_CharityInfo
             // 

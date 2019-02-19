@@ -17,6 +17,9 @@ namespace DemoExamPreparing
             InitializeComponent();
         }
 
-        
+        private void GoBackButton_Click(object sender, EventArgs e)
+        {
+            GlobalThingsClass.GoBack(this);
+        }
     }
 }

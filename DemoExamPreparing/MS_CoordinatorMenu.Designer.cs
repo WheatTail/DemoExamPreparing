@@ -70,6 +70,7 @@
             this.LogoutButton.TabIndex = 62;
             this.LogoutButton.Text = "Logout";
             this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // HeaderLabel
             // 
@@ -91,6 +92,7 @@
             this.GoBackButton.TabIndex = 60;
             this.GoBackButton.Text = "Назад";
             this.GoBackButton.UseVisualStyleBackColor = true;
+            this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
             // 
             // GrayBackgroundLabel
             // 
@@ -120,6 +122,7 @@
             this.RunnersButton.TabIndex = 66;
             this.RunnersButton.Text = "Бегуны";
             this.RunnersButton.UseVisualStyleBackColor = true;
+            this.RunnersButton.Click += new System.EventHandler(this.RunnersButton_Click);
             // 
             // SponsorsButton
             // 

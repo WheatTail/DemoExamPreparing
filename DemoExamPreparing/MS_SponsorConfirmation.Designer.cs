@@ -60,6 +60,7 @@
             this.GoBackButton.TabIndex = 19;
             this.GoBackButton.Text = "Назад";
             this.GoBackButton.UseVisualStyleBackColor = true;
+            this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
             // 
             // GrayBackgroundLabel
             // 
@@ -149,6 +150,7 @@
             this.GoBack2Button.TabIndex = 28;
             this.GoBack2Button.Text = "Назад";
             this.GoBack2Button.UseVisualStyleBackColor = true;
+            this.GoBack2Button.Click += new System.EventHandler(this.GoBack2Button_Click);
             // 
             // MS_SponsorConfirmation
             // 

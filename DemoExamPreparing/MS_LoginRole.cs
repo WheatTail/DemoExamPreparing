@@ -16,5 +16,32 @@ namespace DemoExamPreparing
         {
             InitializeComponent();
         }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.Dispose();
+        }
+
+        private void RunnerLoginButton_Click(object sender, EventArgs e)
+        {
+            GlobalThingsClass.GoFurther(new MS_RunnerMenu(), this.Owner);
+            this.Close();
+            this.Dispose();
+        }
+
+        private void ManagerLoginButton_Click(object sender, EventArgs e)
+        {
+            GlobalThingsClass.GoFurther(new MS_CoordinatorMenu(), this.Owner);
+            this.Close();
+            this.Dispose();
+        }
+
+        private void AdminLoginButton_Click(object sender, EventArgs e)
+        {
+            GlobalThingsClass.GoFurther(new MS_AdminMenu(), this.Owner);
+            this.Close();
+            this.Dispose();
+        }
     }
 }

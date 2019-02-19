@@ -40,7 +40,7 @@
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.PasswordChangeHintLabel = new System.Windows.Forms.Label();
             this.PasswordChangeLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.UserEditHeaderLabel = new System.Windows.Forms.Label();
             this.EmailLabel = new System.Windows.Forms.Label();
             this.NameLabel = new System.Windows.Forms.Label();
             this.SurnameLabel = new System.Windows.Forms.Label();
@@ -84,6 +84,7 @@
             this.LogoutButton.TabIndex = 98;
             this.LogoutButton.Text = "Logout";
             this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // HeaderLabel
             // 
@@ -105,6 +106,7 @@
             this.GoBackButton.TabIndex = 96;
             this.GoBackButton.Text = "Назад";
             this.GoBackButton.UseVisualStyleBackColor = true;
+            this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
             // 
             // GrayBackgroundLabel
             // 
@@ -175,21 +177,21 @@
             this.PasswordChangeLabel.TabIndex = 101;
             this.PasswordChangeLabel.Text = "Смена пароля";
             // 
-            // label1
+            // UserEditHeaderLabel
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(0, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(484, 44);
-            this.label1.TabIndex = 107;
-            this.label1.Text = "Редактирование пользователя";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.UserEditHeaderLabel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UserEditHeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UserEditHeaderLabel.Location = new System.Drawing.Point(0, 48);
+            this.UserEditHeaderLabel.Name = "UserEditHeaderLabel";
+            this.UserEditHeaderLabel.Size = new System.Drawing.Size(484, 44);
+            this.UserEditHeaderLabel.TabIndex = 107;
+            this.UserEditHeaderLabel.Text = "Редактирование пользователя";
+            this.UserEditHeaderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // EmailLabel
             // 
             this.EmailLabel.AutoSize = true;
-            this.EmailLabel.Location = new System.Drawing.Point(33, 92);
+            this.EmailLabel.Location = new System.Drawing.Point(36, 92);
             this.EmailLabel.Name = "EmailLabel";
             this.EmailLabel.Size = new System.Drawing.Size(35, 13);
             this.EmailLabel.TabIndex = 108;
@@ -198,7 +200,7 @@
             // NameLabel
             // 
             this.NameLabel.AutoSize = true;
-            this.NameLabel.Location = new System.Drawing.Point(36, 111);
+            this.NameLabel.Location = new System.Drawing.Point(39, 111);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(32, 13);
             this.NameLabel.TabIndex = 109;
@@ -207,7 +209,7 @@
             // SurnameLabel
             // 
             this.SurnameLabel.AutoSize = true;
-            this.SurnameLabel.Location = new System.Drawing.Point(9, 137);
+            this.SurnameLabel.Location = new System.Drawing.Point(12, 137);
             this.SurnameLabel.Name = "SurnameLabel";
             this.SurnameLabel.Size = new System.Drawing.Size(59, 13);
             this.SurnameLabel.TabIndex = 110;
@@ -216,7 +218,7 @@
             // RoleLabel
             // 
             this.RoleLabel.AutoSize = true;
-            this.RoleLabel.Location = new System.Drawing.Point(33, 163);
+            this.RoleLabel.Location = new System.Drawing.Point(36, 163);
             this.RoleLabel.Name = "RoleLabel";
             this.RoleLabel.Size = new System.Drawing.Size(35, 13);
             this.RoleLabel.TabIndex = 111;
@@ -276,6 +278,7 @@
             this.CancelButton.TabIndex = 117;
             this.CancelButton.Text = "Отмена";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // MS_UserEdit
             // 
@@ -292,7 +295,7 @@
             this.Controls.Add(this.SurnameLabel);
             this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.EmailLabel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.UserEditHeaderLabel);
             this.Controls.Add(this.PasswordTextBox);
             this.Controls.Add(this.RepeatPasswordTextBox);
             this.Controls.Add(this.PasswordRepeatLabel);
@@ -327,7 +330,7 @@
         private System.Windows.Forms.Label PasswordLabel;
         private System.Windows.Forms.Label PasswordChangeHintLabel;
         private System.Windows.Forms.Label PasswordChangeLabel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label UserEditHeaderLabel;
         private System.Windows.Forms.Label EmailLabel;
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Label SurnameLabel;

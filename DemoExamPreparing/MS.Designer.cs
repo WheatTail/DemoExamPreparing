@@ -71,6 +71,7 @@
             this.IWannaBeARunnerButton.TabIndex = 1;
             this.IWannaBeARunnerButton.Text = "Я хочу стать бегуном";
             this.IWannaBeARunnerButton.UseVisualStyleBackColor = true;
+            this.IWannaBeARunnerButton.Click += new System.EventHandler(this.IWannaBeARunnerButton_Click);
             // 
             // IWannaBeARunnerSponsor
             // 
@@ -131,7 +132,7 @@
             this.FooterLabel.TabIndex = 6;
             this.FooterLabel.Text = "Сколько-то дней до чего-то там";
             // 
-            // MarathonSkills
+            // MS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -145,7 +146,7 @@
             this.Controls.Add(this.HeaderLabel);
             this.Controls.Add(this.GrayBackgroundHeaderLabel);
             this.MinimumSize = new System.Drawing.Size(500, 400);
-            this.Name = "MarathonSkills";
+            this.Name = "MS";
             this.Text = "Marathon Skills 2019";
             this.Load += new System.EventHandler(this.MarathonSkills_Load);
             this.ResumeLayout(false);

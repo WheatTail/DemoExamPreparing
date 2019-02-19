@@ -57,6 +57,8 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SexSelectComboBox = new System.Windows.Forms.ComboBox();
             this.BirthDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.SaveButton = new System.Windows.Forms.Button();
+            this.CancelButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PhotoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +71,7 @@
             this.LogoutButton.TabIndex = 46;
             this.LogoutButton.Text = "Logout";
             this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // HeaderLabel
             // 
@@ -90,6 +93,7 @@
             this.GoBackButton.TabIndex = 44;
             this.GoBackButton.Text = "Назад";
             this.GoBackButton.UseVisualStyleBackColor = true;
+            this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
             // 
             // GrayBackgroundLabel
             // 
@@ -336,11 +340,32 @@
             this.BirthDateDateTimePicker.Size = new System.Drawing.Size(120, 20);
             this.BirthDateDateTimePicker.TabIndex = 71;
             // 
+            // SaveButton
+            // 
+            this.SaveButton.Location = new System.Drawing.Point(128, 299);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(75, 23);
+            this.SaveButton.TabIndex = 72;
+            this.SaveButton.Text = "Сохранить";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            // 
+            // CancelButton
+            // 
+            this.CancelButton.Location = new System.Drawing.Point(209, 299);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(75, 23);
+            this.CancelButton.TabIndex = 73;
+            this.CancelButton.Text = "Отмена";
+            this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
             // MS_EditProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 361);
+            this.Controls.Add(this.CancelButton);
+            this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.BirthDateDateTimePicker);
             this.Controls.Add(this.SexSelectComboBox);
             this.Controls.Add(this.comboBox1);
@@ -410,5 +435,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox SexSelectComboBox;
         private System.Windows.Forms.DateTimePicker BirthDateDateTimePicker;
+        private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Button CancelButton;
     }
 }

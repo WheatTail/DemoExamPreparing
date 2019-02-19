@@ -51,6 +51,7 @@
             this.LogoutButton.TabIndex = 42;
             this.LogoutButton.Text = "Logout";
             this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // HeaderLabel
             // 
@@ -72,6 +73,7 @@
             this.GoBackButton.TabIndex = 40;
             this.GoBackButton.Text = "Назад";
             this.GoBackButton.UseVisualStyleBackColor = true;
+            this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
             // 
             // GrayBackgroundLabel
             // 
@@ -125,6 +127,7 @@
             this.RegistrationButton.TabIndex = 46;
             this.RegistrationButton.Text = "Регистрация на марафон";
             this.RegistrationButton.UseVisualStyleBackColor = true;
+            this.RegistrationButton.Click += new System.EventHandler(this.RegistrationButton_Click);
             // 
             // ResultsButton
             // 
@@ -135,6 +138,7 @@
             this.ResultsButton.TabIndex = 47;
             this.ResultsButton.Text = "Мои результаты";
             this.ResultsButton.UseVisualStyleBackColor = true;
+            this.ResultsButton.Click += new System.EventHandler(this.ResultsButton_Click);
             // 
             // EditInfoButton
             // 
@@ -156,6 +160,7 @@
             this.SponsorButton.TabIndex = 49;
             this.SponsorButton.Text = "Мой спонсор";
             this.SponsorButton.UseVisualStyleBackColor = true;
+            this.SponsorButton.Click += new System.EventHandler(this.SponsorButton_Click);
             // 
             // ContactsButton
             // 
@@ -166,6 +171,7 @@
             this.ContactsButton.TabIndex = 50;
             this.ContactsButton.Text = "Контакты";
             this.ContactsButton.UseVisualStyleBackColor = true;
+            this.ContactsButton.Click += new System.EventHandler(this.ContactsButton_Click);
             // 
             // MS_RunnerMenu
             // 

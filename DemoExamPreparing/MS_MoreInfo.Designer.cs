@@ -34,7 +34,7 @@
             this.FooterLabel = new System.Windows.Forms.Label();
             this.GratBackgroundFooterLabel = new System.Windows.Forms.Label();
             this.MoreInfoHeaderLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.MarathonInfoButton = new System.Windows.Forms.Button();
             this.MarathonDurationButton = new System.Windows.Forms.Button();
             this.PreviousResultsButton = new System.Windows.Forms.Button();
             this.CharitiesListButton = new System.Windows.Forms.Button();
@@ -62,6 +62,7 @@
             this.GoBackButton.TabIndex = 13;
             this.GoBackButton.Text = "Назад";
             this.GoBackButton.UseVisualStyleBackColor = true;
+            this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
             // 
             // GrayBackgroundLabel
             // 
@@ -105,15 +106,16 @@
             this.MoreInfoHeaderLabel.Text = "Подробная информация";
             this.MoreInfoHeaderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // MarathonInfoButton
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(65, 121);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 40);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Marathon Skills 2019";
-            this.button1.UseVisualStyleBackColor = true;
+            this.MarathonInfoButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MarathonInfoButton.Location = new System.Drawing.Point(65, 121);
+            this.MarathonInfoButton.Name = "MarathonInfoButton";
+            this.MarathonInfoButton.Size = new System.Drawing.Size(170, 40);
+            this.MarathonInfoButton.TabIndex = 18;
+            this.MarathonInfoButton.Text = "Marathon Skills 2019";
+            this.MarathonInfoButton.UseVisualStyleBackColor = true;
+            this.MarathonInfoButton.Click += new System.EventHandler(this.MarathonInfoButton_Click);
             // 
             // MarathonDurationButton
             // 
@@ -124,6 +126,7 @@
             this.MarathonDurationButton.TabIndex = 19;
             this.MarathonDurationButton.Text = "Сколько длится марафон";
             this.MarathonDurationButton.UseVisualStyleBackColor = true;
+            this.MarathonDurationButton.Click += new System.EventHandler(this.MarathonDurationButton_Click);
             // 
             // PreviousResultsButton
             // 
@@ -134,6 +137,7 @@
             this.PreviousResultsButton.TabIndex = 20;
             this.PreviousResultsButton.Text = "Предыдущие результаты";
             this.PreviousResultsButton.UseVisualStyleBackColor = true;
+            this.PreviousResultsButton.Click += new System.EventHandler(this.PreviousResultsButton_Click);
             // 
             // CharitiesListButton
             // 
@@ -144,6 +148,7 @@
             this.CharitiesListButton.TabIndex = 21;
             this.CharitiesListButton.Text = "Список благотворительных организаций";
             this.CharitiesListButton.UseVisualStyleBackColor = true;
+            this.CharitiesListButton.Click += new System.EventHandler(this.CharitiesListButton_Click);
             // 
             // BMICalculatorButton
             // 
@@ -154,6 +159,7 @@
             this.BMICalculatorButton.TabIndex = 22;
             this.BMICalculatorButton.Text = "BMI калькулятор";
             this.BMICalculatorButton.UseVisualStyleBackColor = true;
+            this.BMICalculatorButton.Click += new System.EventHandler(this.BMICalculatorButton_Click);
             // 
             // BMRCalculatorButton
             // 
@@ -164,6 +170,7 @@
             this.BMRCalculatorButton.TabIndex = 23;
             this.BMRCalculatorButton.Text = "BMR Калькулятор";
             this.BMRCalculatorButton.UseVisualStyleBackColor = true;
+            this.BMRCalculatorButton.Click += new System.EventHandler(this.BMRCalculatorButton_Click);
             // 
             // MS_MoreInfo
             // 
@@ -175,7 +182,7 @@
             this.Controls.Add(this.CharitiesListButton);
             this.Controls.Add(this.PreviousResultsButton);
             this.Controls.Add(this.MarathonDurationButton);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.MarathonInfoButton);
             this.Controls.Add(this.MoreInfoHeaderLabel);
             this.Controls.Add(this.FooterLabel);
             this.Controls.Add(this.GratBackgroundFooterLabel);
@@ -198,7 +205,7 @@
         private System.Windows.Forms.Label FooterLabel;
         private System.Windows.Forms.Label GratBackgroundFooterLabel;
         private System.Windows.Forms.Label MoreInfoHeaderLabel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button MarathonInfoButton;
         private System.Windows.Forms.Button MarathonDurationButton;
         private System.Windows.Forms.Button PreviousResultsButton;
         private System.Windows.Forms.Button CharitiesListButton;

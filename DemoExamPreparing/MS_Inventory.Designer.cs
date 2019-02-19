@@ -74,6 +74,7 @@
             this.LogoutButton.TabIndex = 48;
             this.LogoutButton.Text = "Logout";
             this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // HeaderLabel
             // 
@@ -95,6 +96,7 @@
             this.GoBackButton.TabIndex = 46;
             this.GoBackButton.Text = "Назад";
             this.GoBackButton.UseVisualStyleBackColor = true;
+            this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
             // 
             // GrayBackgroundLabel
             // 
@@ -170,6 +172,7 @@
             this.InventoryReportButton.TabIndex = 54;
             this.InventoryReportButton.Text = "Отчёт";
             this.InventoryReportButton.UseVisualStyleBackColor = true;
+            this.InventoryReportButton.Click += new System.EventHandler(this.InventoryReportButton_Click);
             // 
             // InventoryIncomingButton
             // 
@@ -180,6 +183,7 @@
             this.InventoryIncomingButton.TabIndex = 55;
             this.InventoryIncomingButton.Text = "Поступление";
             this.InventoryIncomingButton.UseVisualStyleBackColor = true;
+            this.InventoryIncomingButton.Click += new System.EventHandler(this.InventoryIncomingButton_Click);
             // 
             // MS_Inventory
             // 

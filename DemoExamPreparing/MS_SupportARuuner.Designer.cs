@@ -329,6 +329,7 @@
             this.CancelButton.TabIndex = 52;
             this.CancelButton.Text = "Отмена";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // GrayBackgroundLabel
             // 
@@ -347,6 +348,7 @@
             this.GoBackButton.TabIndex = 16;
             this.GoBackButton.Text = "Назад";
             this.GoBackButton.UseVisualStyleBackColor = true;
+            this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
             // 
             // HeaderLabel
             // 

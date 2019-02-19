@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MS_CharityAddOrEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_CharityAddOrEdit.Designer.cs">
+      <DependentUpon>MS_CharityAddOrEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="MS_AdminMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,12 @@
     </Compile>
     <Compile Include="MS_BMRInfo.Designer.cs">
       <DependentUpon>MS_BMRInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Certificate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_Certificate.Designer.cs">
+      <DependentUpon>MS_Certificate.cs</DependentUpon>
     </Compile>
     <Compile Include="MS_CharitiesList.cs">
       <SubType>Form</SubType>
@@ -160,6 +172,18 @@
     <Compile Include="MS_LoginRole.Designer.cs">
       <DependentUpon>MS_LoginRole.cs</DependentUpon>
     </Compile>
+    <Compile Include="MS_ManageCharities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_ManageCharities.Designer.cs">
+      <DependentUpon>MS_ManageCharities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_ManageRunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_ManageRunner.Designer.cs">
+      <DependentUpon>MS_ManageRunner.cs</DependentUpon>
+    </Compile>
     <Compile Include="MS_MarathonInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +237,18 @@
     </Compile>
     <Compile Include="MS_Report.Designer.cs">
       <DependentUpon>MS_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_RunnerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_RunnerEdit.Designer.cs">
+      <DependentUpon>MS_RunnerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_RunnerManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_RunnerManagement.Designer.cs">
+      <DependentUpon>MS_RunnerManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="MS_RunnerMenu.cs">
       <SubType>Form</SubType>
@@ -283,6 +319,9 @@
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SettingsManager.cs" />
+    <EmbeddedResource Include="MS_CharityAddOrEdit.resx">
+      <DependentUpon>MS_CharityAddOrEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MS_AdminMenu.resx">
       <DependentUpon>MS_AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MS_BMRInfo.resx">
       <DependentUpon>MS_BMRInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_Certificate.resx">
+      <DependentUpon>MS_Certificate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MS_CharitiesList.resx">
       <DependentUpon>MS_CharitiesList.cs</DependentUpon>
@@ -337,6 +379,12 @@
     <EmbeddedResource Include="MS_LoginRole.resx">
       <DependentUpon>MS_LoginRole.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MS_ManageCharities.resx">
+      <DependentUpon>MS_ManageCharities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_ManageRunner.resx">
+      <DependentUpon>MS_ManageRunner.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MS_MarathonInfo.resx">
       <DependentUpon>MS_MarathonInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -363,6 +411,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MS_Report.resx">
       <DependentUpon>MS_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_RunnerEdit.resx">
+      <DependentUpon>MS_RunnerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_RunnerManagement.resx">
+      <DependentUpon>MS_RunnerManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MS_RunnerMenu.resx">
       <DependentUpon>MS_RunnerMenu.cs</DependentUpon>

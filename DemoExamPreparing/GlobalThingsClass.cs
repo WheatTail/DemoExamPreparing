@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace DemoExamPreparing
 {
@@ -17,6 +18,31 @@ namespace DemoExamPreparing
         {
             MySqlConnection Con = new MySqlConnection("SERVER=" + Server + "; port=3306; Database=" + Database + "; UID=" + UID + "; PASSWORD=" + Password + "; Persist Security Info=True;");
             return Con;
+        }
+        public static void GoFurther(Form form, Form owner)
+        {
+            form.Owner = owner;
+            form.Show();
+            owner.Hide();
+        }
+        public static void GoBack(Form form)
+        {
+            form.Owner.Show();
+            form.Close();
+        }
+        public static void LogOut(Form form)
+        {
+            if (form.Owner != null)
+            {
+                LogOut(form.Owner);
+                form.Owner = null;
+                form.Close();
+                form.Dispose();                
+            }
+            else
+            {
+                form.Show();
+            }
         }
     }
 }

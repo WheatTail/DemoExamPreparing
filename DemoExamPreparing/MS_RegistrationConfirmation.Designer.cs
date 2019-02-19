@@ -60,6 +60,7 @@
             this.GoBackButton.TabIndex = 22;
             this.GoBackButton.Text = "Назад";
             this.GoBackButton.UseVisualStyleBackColor = true;
+            this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
             // 
             // GrayBackgroundLabel
             // 
@@ -137,6 +138,7 @@
             this.ConfirmationBuuton.TabIndex = 29;
             this.ConfirmationBuuton.Text = "ОК";
             this.ConfirmationBuuton.UseVisualStyleBackColor = true;
+            this.ConfirmationBuuton.Click += new System.EventHandler(this.ConfirmationBuuton_Click);
             // 
             // LogoutButton
             // 
@@ -147,6 +149,7 @@
             this.LogoutButton.TabIndex = 38;
             this.LogoutButton.Text = "Logout";
             this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // MS_RegistrationConfirmation
             // 

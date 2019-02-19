@@ -72,6 +72,7 @@
             this.LogoutButton.TabIndex = 68;
             this.LogoutButton.Text = "Logout";
             this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // HeaderLabel
             // 
@@ -93,6 +94,7 @@
             this.GoBackButton.TabIndex = 66;
             this.GoBackButton.Text = "Назад";
             this.GoBackButton.UseVisualStyleBackColor = true;
+            this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
             // 
             // GrayBackgroundLabel
             // 
@@ -123,6 +125,7 @@
             this.UsersButton.TabIndex = 72;
             this.UsersButton.Text = "Пользователи";
             this.UsersButton.UseVisualStyleBackColor = true;
+            this.UsersButton.Click += new System.EventHandler(this.UsersButton_Click);
             // 
             // VolunteerButton
             // 
@@ -132,6 +135,7 @@
             this.VolunteerButton.TabIndex = 73;
             this.VolunteerButton.Text = "Волонтёры";
             this.VolunteerButton.UseVisualStyleBackColor = true;
+            this.VolunteerButton.Click += new System.EventHandler(this.VolunteerButton_Click);
             // 
             // CharityButton
             // 
@@ -141,6 +145,7 @@
             this.CharityButton.TabIndex = 74;
             this.CharityButton.Text = "Благотворительные организации";
             this.CharityButton.UseVisualStyleBackColor = true;
+            this.CharityButton.Click += new System.EventHandler(this.CharityButton_Click);
             // 
             // InventoryButton
             // 
@@ -150,6 +155,7 @@
             this.InventoryButton.TabIndex = 75;
             this.InventoryButton.Text = "Инвентарь";
             this.InventoryButton.UseVisualStyleBackColor = true;
+            this.InventoryButton.Click += new System.EventHandler(this.InventoryButton_Click);
             // 
             // MS_AdminMenu
             // 

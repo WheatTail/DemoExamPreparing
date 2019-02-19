@@ -16,5 +16,25 @@ namespace DemoExamPreparing
         {
             InitializeComponent();
         }
+
+        private void GoBackButton_Click(object sender, EventArgs e)
+        {
+            GlobalThingsClass.GoBack(this);
+        }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            GlobalThingsClass.GoFurther(new MS_Login(), this);
+        }
+
+        private void IveAlreadyWasHereButton_Click(object sender, EventArgs e)
+        {
+            GlobalThingsClass.GoFurther(new MS_Login(), this);
+        }
+
+        private void IamNewRunnerButton_Click(object sender, EventArgs e)
+        {
+            GlobalThingsClass.GoFurther(new MS_RegisterAsRunnerData(), this);
+        }
     }
 }

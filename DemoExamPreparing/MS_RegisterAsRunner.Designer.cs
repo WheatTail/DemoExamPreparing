@@ -55,6 +55,7 @@
             this.GoBackButton.TabIndex = 4;
             this.GoBackButton.Text = "Назад";
             this.GoBackButton.UseVisualStyleBackColor = true;
+            this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
             // 
             // IveAlreadyWasHereButton
             // 
@@ -66,6 +67,7 @@
             this.IveAlreadyWasHereButton.TabIndex = 1;
             this.IveAlreadyWasHereButton.Text = "Я участвовал ранее";
             this.IveAlreadyWasHereButton.UseVisualStyleBackColor = true;
+            this.IveAlreadyWasHereButton.Click += new System.EventHandler(this.IveAlreadyWasHereButton_Click);
             // 
             // IamNewRunnerButton
             // 
@@ -77,6 +79,7 @@
             this.IamNewRunnerButton.TabIndex = 2;
             this.IamNewRunnerButton.Text = "Я новый участник";
             this.IamNewRunnerButton.UseVisualStyleBackColor = true;
+            this.IamNewRunnerButton.Click += new System.EventHandler(this.IamNewRunnerButton_Click);
             // 
             // LoginButton
             // 
@@ -87,6 +90,7 @@
             this.LoginButton.TabIndex = 3;
             this.LoginButton.Text = "Login";
             this.LoginButton.UseVisualStyleBackColor = true;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // HeaderLabel
             // 
