@@ -29,7 +29,12 @@ namespace DemoExamPreparing
 
         private void RunnersButton_Click(object sender, EventArgs e)
         {
-            //GlobalThingsClass.GoFurther(MS_Runn)
+            GlobalThingsClass.GoFurther(new MS_RunnerManagement(), this);
+        }
+
+        private void SponsorsButton_Click(object sender, EventArgs e)
+        {
+            GlobalThingsClass.GoFurther(new MS_SponsorsOverview(), this);
         }
     }
 }

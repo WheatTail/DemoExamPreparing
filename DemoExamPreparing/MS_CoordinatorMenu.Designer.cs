@@ -132,6 +132,7 @@
             this.SponsorsButton.TabIndex = 67;
             this.SponsorsButton.Text = "Спонсоры";
             this.SponsorsButton.UseVisualStyleBackColor = true;
+            this.SponsorsButton.Click += new System.EventHandler(this.SponsorsButton_Click);
             // 
             // MS_CoordinatorMenu
             // 
