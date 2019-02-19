@@ -251,6 +251,7 @@
             this.Controls.Add(this.HeaderLabel);
             this.Controls.Add(this.GoBackButton);
             this.Controls.Add(this.GrayBackgroundLabel);
+            this.MinimumSize = new System.Drawing.Size(500, 400);
             this.Name = "MS_PreviousResult";
             this.Text = "MS_PreviousResult";
             ((System.ComponentModel.ISupportInitialize)(this.ResultsDataGridView)).EndInit();

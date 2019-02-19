@@ -359,6 +359,7 @@
             this.Controls.Add(this.HeaderLabel);
             this.Controls.Add(this.GoBackButton);
             this.Controls.Add(this.GrayBackgroundLabel);
+            this.MinimumSize = new System.Drawing.Size(500, 400);
             this.Name = "MS_RegisterForAnEvent";
             this.Text = "MS_RegisterForAnEvent";
             this.ResumeLayout(false);

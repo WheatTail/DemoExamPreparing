@@ -49,8 +49,8 @@
             this.BMICalculateButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.BMIResultScaleGroupBox = new System.Windows.Forms.GroupBox();
-            this.BMIResultScalePictureBox = new System.Windows.Forms.PictureBox();
             this.BMIResultScaleLabel = new System.Windows.Forms.Label();
+            this.BMIResultScalePictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.BMIMalePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BMIFemalePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BMIResultPictureBox)).BeginInit();
@@ -134,7 +134,7 @@
             // HeightLabel
             // 
             this.HeightLabel.AutoSize = true;
-            this.HeightLabel.Location = new System.Drawing.Point(33, 196);
+            this.HeightLabel.Location = new System.Drawing.Point(33, 229);
             this.HeightLabel.Name = "HeightLabel";
             this.HeightLabel.Size = new System.Drawing.Size(34, 13);
             this.HeightLabel.TabIndex = 131;
@@ -143,7 +143,7 @@
             // WeightLabel
             // 
             this.WeightLabel.AutoSize = true;
-            this.WeightLabel.Location = new System.Drawing.Point(38, 222);
+            this.WeightLabel.Location = new System.Drawing.Point(38, 255);
             this.WeightLabel.Name = "WeightLabel";
             this.WeightLabel.Size = new System.Drawing.Size(29, 13);
             this.WeightLabel.TabIndex = 132;
@@ -160,14 +160,14 @@
             // 
             // HeightTextBox
             // 
-            this.HeightTextBox.Location = new System.Drawing.Point(73, 193);
+            this.HeightTextBox.Location = new System.Drawing.Point(73, 226);
             this.HeightTextBox.Name = "HeightTextBox";
             this.HeightTextBox.Size = new System.Drawing.Size(56, 20);
             this.HeightTextBox.TabIndex = 134;
             // 
             // WeightTextBox
             // 
-            this.WeightTextBox.Location = new System.Drawing.Point(73, 219);
+            this.WeightTextBox.Location = new System.Drawing.Point(73, 252);
             this.WeightTextBox.Name = "WeightTextBox";
             this.WeightTextBox.Size = new System.Drawing.Size(56, 20);
             this.WeightTextBox.TabIndex = 135;
@@ -176,7 +176,7 @@
             // 
             this.BMIMalePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.BMIMalePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("BMIMalePictureBox.Image")));
-            this.BMIMalePictureBox.Location = new System.Drawing.Point(12, 87);
+            this.BMIMalePictureBox.Location = new System.Drawing.Point(12, 120);
             this.BMIMalePictureBox.Name = "BMIMalePictureBox";
             this.BMIMalePictureBox.Size = new System.Drawing.Size(100, 100);
             this.BMIMalePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -186,7 +186,7 @@
             // BMIFemalePictureBox
             // 
             this.BMIFemalePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("BMIFemalePictureBox.Image")));
-            this.BMIFemalePictureBox.Location = new System.Drawing.Point(123, 87);
+            this.BMIFemalePictureBox.Location = new System.Drawing.Point(123, 120);
             this.BMIFemalePictureBox.Name = "BMIFemalePictureBox";
             this.BMIFemalePictureBox.Size = new System.Drawing.Size(100, 100);
             this.BMIFemalePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -196,7 +196,7 @@
             // WeightKGLabel
             // 
             this.WeightKGLabel.AutoSize = true;
-            this.WeightKGLabel.Location = new System.Drawing.Point(135, 222);
+            this.WeightKGLabel.Location = new System.Drawing.Point(135, 255);
             this.WeightKGLabel.Name = "WeightKGLabel";
             this.WeightKGLabel.Size = new System.Drawing.Size(18, 13);
             this.WeightKGLabel.TabIndex = 138;
@@ -205,7 +205,7 @@
             // HeightCMLabel
             // 
             this.HeightCMLabel.AutoSize = true;
-            this.HeightCMLabel.Location = new System.Drawing.Point(135, 196);
+            this.HeightCMLabel.Location = new System.Drawing.Point(135, 229);
             this.HeightCMLabel.Name = "HeightCMLabel";
             this.HeightCMLabel.Size = new System.Drawing.Size(21, 13);
             this.HeightCMLabel.TabIndex = 139;
@@ -223,7 +223,7 @@
             // 
             // BMICalculateButton
             // 
-            this.BMICalculateButton.Location = new System.Drawing.Point(23, 245);
+            this.BMICalculateButton.Location = new System.Drawing.Point(23, 278);
             this.BMICalculateButton.Name = "BMICalculateButton";
             this.BMICalculateButton.Size = new System.Drawing.Size(75, 23);
             this.BMICalculateButton.TabIndex = 141;
@@ -232,7 +232,7 @@
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(104, 245);
+            this.CancelButton.Location = new System.Drawing.Point(104, 278);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(75, 23);
             this.CancelButton.TabIndex = 142;
@@ -251,6 +251,15 @@
             this.BMIResultScaleGroupBox.TabIndex = 143;
             this.BMIResultScaleGroupBox.TabStop = false;
             // 
+            // BMIResultScaleLabel
+            // 
+            this.BMIResultScaleLabel.Location = new System.Drawing.Point(6, 67);
+            this.BMIResultScaleLabel.Name = "BMIResultScaleLabel";
+            this.BMIResultScaleLabel.Size = new System.Drawing.Size(275, 13);
+            this.BMIResultScaleLabel.TabIndex = 135;
+            this.BMIResultScaleLabel.Text = "Недостаточный Здоровый Избыточный Ожирение";
+            this.BMIResultScaleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // BMIResultScalePictureBox
             // 
             this.BMIResultScalePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("BMIResultScalePictureBox.Image")));
@@ -260,15 +269,6 @@
             this.BMIResultScalePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BMIResultScalePictureBox.TabIndex = 134;
             this.BMIResultScalePictureBox.TabStop = false;
-            // 
-            // BMIResultScaleLabel
-            // 
-            this.BMIResultScaleLabel.Location = new System.Drawing.Point(6, 67);
-            this.BMIResultScaleLabel.Name = "BMIResultScaleLabel";
-            this.BMIResultScaleLabel.Size = new System.Drawing.Size(275, 13);
-            this.BMIResultScaleLabel.TabIndex = 135;
-            this.BMIResultScaleLabel.Text = "Недостаточный Здоровый Избыточный Ожирение";
-            this.BMIResultScaleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MS_BMICalculator
             // 
@@ -294,6 +294,7 @@
             this.Controls.Add(this.HeaderLabel);
             this.Controls.Add(this.GoBackButton);
             this.Controls.Add(this.GrayBackgroundLabel);
+            this.MinimumSize = new System.Drawing.Size(500, 400);
             this.Name = "MS_BMICalculator";
             this.Text = "MS_BMIValculator";
             ((System.ComponentModel.ISupportInitialize)(this.BMIMalePictureBox)).EndInit();

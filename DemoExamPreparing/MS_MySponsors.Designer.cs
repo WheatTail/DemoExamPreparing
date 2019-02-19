@@ -161,7 +161,7 @@
             this.MySponsorsDataGridView.Size = new System.Drawing.Size(240, 150);
             this.MySponsorsDataGridView.TabIndex = 64;
             // 
-            // MySponsors
+            // MS_MySponsors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -178,7 +178,8 @@
             this.Controls.Add(this.HeaderLabel);
             this.Controls.Add(this.GoBackButton);
             this.Controls.Add(this.GrayBackgroundLabel);
-            this.Name = "MySponsors";
+            this.MinimumSize = new System.Drawing.Size(500, 400);
+            this.Name = "MS_MySponsors";
             this.Text = "MySponsors";
             ((System.ComponentModel.ISupportInitialize)(this.CharityLogoPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MySponsorsDataGridView)).EndInit();

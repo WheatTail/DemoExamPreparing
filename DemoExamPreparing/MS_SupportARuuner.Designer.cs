@@ -395,6 +395,7 @@
             this.Controls.Add(this.RunnerLabel);
             this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.SponsorInfoLabel);
+            this.MinimumSize = new System.Drawing.Size(500, 400);
             this.Name = "MS_SupportARuuner";
             this.Text = "MS_SupportARuuner";
             this.ResumeLayout(false);

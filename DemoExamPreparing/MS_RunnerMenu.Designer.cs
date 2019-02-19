@@ -184,6 +184,7 @@
             this.Controls.Add(this.HeaderLabel);
             this.Controls.Add(this.GoBackButton);
             this.Controls.Add(this.GrayBackgroundLabel);
+            this.MinimumSize = new System.Drawing.Size(500, 400);
             this.Name = "MS_RunnerMenu";
             this.Text = "MS_RunnerMenu";
             this.ResumeLayout(false);

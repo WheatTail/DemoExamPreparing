@@ -78,6 +78,7 @@
             this.Controls.Add(this.Contacnstlabel);
             this.Controls.Add(this.ContactsHeaderLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(450, 350);
             this.Name = "MS_Contacts";
             this.Text = "MS_Contacts";
             this.ResumeLayout(false);

@@ -376,6 +376,7 @@
             this.Controls.Add(this.GoBackButton);
             this.Controls.Add(this.GrayBackgroundLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(500, 400);
             this.Name = "MS_RegisterAsRunnerData";
             this.Text = "MS_RegisterAsRunnerData";
             ((System.ComponentModel.ISupportInitialize)(this.PhotoPictureBox)).EndInit();

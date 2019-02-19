@@ -40,7 +40,7 @@
             this.CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CancelButton.AutoSize = true;
             this.CancelButton.ForeColor = System.Drawing.Color.DarkRed;
-            this.CancelButton.Location = new System.Drawing.Point(348, 12);
+            this.CancelButton.Location = new System.Drawing.Point(298, 12);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(24, 23);
             this.CancelButton.TabIndex = 0;
@@ -59,7 +59,7 @@
             // RunnerLoginButton
             // 
             this.RunnerLoginButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.RunnerLoginButton.Location = new System.Drawing.Point(138, 85);
+            this.RunnerLoginButton.Location = new System.Drawing.Point(168, 69);
             this.RunnerLoginButton.Name = "RunnerLoginButton";
             this.RunnerLoginButton.Size = new System.Drawing.Size(96, 23);
             this.RunnerLoginButton.TabIndex = 2;
@@ -70,7 +70,7 @@
             // 
             this.ManagerLoginButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ManagerLoginButton.AutoSize = true;
-            this.ManagerLoginButton.Location = new System.Drawing.Point(138, 134);
+            this.ManagerLoginButton.Location = new System.Drawing.Point(168, 118);
             this.ManagerLoginButton.Name = "ManagerLoginButton";
             this.ManagerLoginButton.Size = new System.Drawing.Size(96, 23);
             this.ManagerLoginButton.TabIndex = 3;
@@ -81,7 +81,7 @@
             // 
             this.AdminLoginButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.AdminLoginButton.AutoSize = true;
-            this.AdminLoginButton.Location = new System.Drawing.Point(138, 185);
+            this.AdminLoginButton.Location = new System.Drawing.Point(168, 169);
             this.AdminLoginButton.Name = "AdminLoginButton";
             this.AdminLoginButton.Size = new System.Drawing.Size(96, 23);
             this.AdminLoginButton.TabIndex = 4;
@@ -92,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 261);
+            this.ClientSize = new System.Drawing.Size(450, 350);
             this.ControlBox = false;
             this.Controls.Add(this.AdminLoginButton);
             this.Controls.Add(this.ManagerLoginButton);
@@ -101,6 +101,7 @@
             this.Controls.Add(this.CancelButton);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(450, 350);
             this.Name = "MS_LoginRole";
             this.Text = "MS_LoginRole";
             this.ResumeLayout(false);

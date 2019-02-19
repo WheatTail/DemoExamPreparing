@@ -370,6 +370,7 @@
             this.Controls.Add(this.HeaderLabel);
             this.Controls.Add(this.GoBackButton);
             this.Controls.Add(this.GrayBackgroundLabel);
+            this.MinimumSize = new System.Drawing.Size(500, 400);
             this.Name = "MS_EditProfile";
             this.Text = "MS_EditProfile";
             ((System.ComponentModel.ISupportInitialize)(this.PhotoPictureBox)).EndInit();

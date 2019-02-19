@@ -63,6 +63,18 @@
     <Compile Include="MS_BMICalculator.Designer.cs">
       <DependentUpon>MS_BMICalculator.cs</DependentUpon>
     </Compile>
+    <Compile Include="MS_BMRCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_BMRCalculator.Designer.cs">
+      <DependentUpon>MS_BMRCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_BMRInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_BMRInfo.Designer.cs">
+      <DependentUpon>MS_BMRInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="MS_CharitiesList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +136,18 @@
     <Compile Include="MS_InteractiveMap.Designer.cs">
       <DependentUpon>MS_InteractiveMap.cs</DependentUpon>
     </Compile>
+    <Compile Include="MS_Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_Inventory.Designer.cs">
+      <DependentUpon>MS_Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_InventoryIncoming.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_InventoryIncoming.Designer.cs">
+      <DependentUpon>MS_InventoryIncoming.cs</DependentUpon>
+    </Compile>
     <Compile Include="MS_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +207,12 @@
     </Compile>
     <Compile Include="MS_RegistrationConfirmation.Designer.cs">
       <DependentUpon>MS_RegistrationConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_Report.Designer.cs">
+      <DependentUpon>MS_Report.cs</DependentUpon>
     </Compile>
     <Compile Include="MS_RunnerMenu.cs">
       <SubType>Form</SubType>
@@ -259,6 +289,12 @@
     <EmbeddedResource Include="MS_BMICalculator.resx">
       <DependentUpon>MS_BMICalculator.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MS_BMRCalculator.resx">
+      <DependentUpon>MS_BMRCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_BMRInfo.resx">
+      <DependentUpon>MS_BMRInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MS_CharitiesList.resx">
       <DependentUpon>MS_CharitiesList.cs</DependentUpon>
     </EmbeddedResource>
@@ -289,6 +325,12 @@
     <EmbeddedResource Include="MS_InteractiveMap.resx">
       <DependentUpon>MS_InteractiveMap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MS_Inventory.resx">
+      <DependentUpon>MS_Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_InventoryIncoming.resx">
+      <DependentUpon>MS_InventoryIncoming.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MS_Login.resx">
       <DependentUpon>MS_Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -318,6 +360,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MS_RegistrationConfirmation.resx">
       <DependentUpon>MS_RegistrationConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_Report.resx">
+      <DependentUpon>MS_Report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MS_RunnerMenu.resx">
       <DependentUpon>MS_RunnerMenu.cs</DependentUpon>

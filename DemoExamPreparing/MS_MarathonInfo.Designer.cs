@@ -184,6 +184,7 @@
             this.Controls.Add(this.HeaderLabel);
             this.Controls.Add(this.GoBackButton);
             this.Controls.Add(this.GrayBackgroundLabel);
+            this.MinimumSize = new System.Drawing.Size(550, 450);
             this.Name = "MS_MarathonInfo";
             this.Text = "MS_MarathonInfo";
             ((System.ComponentModel.ISupportInitialize)(this.InteractiveMapPictureBox)).EndInit();
