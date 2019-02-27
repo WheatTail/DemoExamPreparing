@@ -29,9 +29,13 @@ namespace DemoExamPreparing
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            MS_LoginRole _LoginRole = new MS_LoginRole();
-            _LoginRole.Owner = this;
-            _LoginRole.Show();
+            if (GlobalThingsClass.TestApplication)
+            {
+                MS_LoginRole _LoginRole = new MS_LoginRole();
+                _LoginRole.Owner = this;
+                _LoginRole.Show();
+            }
+
         }
     }
 }

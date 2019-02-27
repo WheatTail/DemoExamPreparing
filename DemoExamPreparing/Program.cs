@@ -16,8 +16,8 @@ namespace DemoExamPreparing
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            MS ms = new MS();
-            Application.Run(ms);
+            //MS ms = new MS();
+            Application.Run(new MS());
         }
     }
 }

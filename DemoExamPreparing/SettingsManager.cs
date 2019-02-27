@@ -13,6 +13,7 @@ namespace DemoExamPreparing
     {
         public string XMLFile = Environment.CurrentDirectory + "\\settings.xml";
         public string Server = @"192.168.1.3";
+        public string Port = @"3306";
         public string Database = @"maindatabase";
         public string UID = @"WT";
         public string Password = @"TestPassword";
