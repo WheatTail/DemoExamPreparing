@@ -13,7 +13,7 @@ ForEach($TXT in $TXTFILE)
     $TXT = $TXT -replace '\|', ' '
     $TXT = $TXT -replace ' # ', ' '
 
-    $TXT = $TXT -replace '@@', '.\@AppHelpToast.png'
+    $TXT = $TXT -replace '@@', '@'
 
     $TXT = $TXT -replace '\s+', ' '
 
