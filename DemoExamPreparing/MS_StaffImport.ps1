@@ -13,7 +13,7 @@ ForEach($TXT in $TXTFILE)
     $TXT = $TXT -replace '\|', ' '
     $TXT = $TXT -replace ' # ', ' '
 
-    $TXT = $TXT -replace '@@', '@'
+    $TXT = $TXT -replace '[@]+', '@'
 
     $TXT = $TXT -replace '\s+', ' '
 
